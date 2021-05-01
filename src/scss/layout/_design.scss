@@ -1,0 +1,23 @@
+.section__design {
+  display: flex;
+}
+.section__design--title {
+  font-family: $font-primary;
+  font-size: 18px;
+  color: $color-secondary;
+  text-transform: uppercase;
+}
+.section__design--form {
+}
+.section__design--subtitle {
+  font-family: $font-primary;
+  font-size: 14px;
+  color: $color-secondary;
+  text-transform: uppercase;
+}
+.section__desing--boxcolor1 {
+  width: 30px;
+  height: 25px;
+  border: 1px solid $color-palette-g1;
+  color: $color-palette-g1;
+}
