@@ -1,25 +1,70 @@
 .main {
-  display: grid;
-  &__title {
-    color: $color-icons;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr repeat(5, 2fr);
-    text-align: center;
-    align-items: center;
-  }
+  color: $color-icons;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: $color-background-landing;
 
   &__title {
-    grid-row-start: 1;
+    font-family: $font-title;
+    font-size: 25px;
+    width: 270px;
+    height: 24px;
+    line-height: 19.2px;
   }
 
   &__subtitle {
     font-family: $font-primary;
-    grid-row-start: 2;
-    width: 264.8px;
-    height: 38.4px;
+    width: 250px;
     font-size: 12.8px;
     color: $color-primary;
-    line-height: 18px;
+    line-height: 25px;
     margin-bottom: 17.5px;
+    font-weight: normal;
+    line-height: normal;
+    padding-bottom: 10px;
+  }
+
+  &__container {
+    width: 268px;
+    border: 1.6px solid $color-border;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    padding: 15px 20px;
+  }
+
+  &__icon {
+    font-size: 22.4px;
+  }
+
+  &__text {
+    font-family: $font-primary;
+    color: $color-secondary;
+    font-size: 12.8px;
+  }
+
+  &__button {
+    text-decoration: none;
+    color: $color-background-cards;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    line-height: normal;
+  }
+
+  &__begin {
+    width: 129px;
+    height: 42px;
+    border-radius: 21px;
+    line-height: 42px;
+    border-radius: 21px solid $color-primary;
+    background-color: $color-button;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
