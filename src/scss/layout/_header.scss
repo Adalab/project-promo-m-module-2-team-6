@@ -1,5 +1,13 @@
-.page__header {
+.hero {
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5.938rem;
+  margin-bottom: 2.188rem;
+  background-color: $color-background-landing;
+
+  &__img {
+    width: 15.62rem;
+    height: 3.93rem;
+  }
 }

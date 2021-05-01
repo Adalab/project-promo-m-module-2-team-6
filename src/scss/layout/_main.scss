@@ -1,0 +1,25 @@
+.main {
+  display: grid;
+  &__title {
+    color: $color-icons;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr repeat(5, 2fr);
+    text-align: center;
+    align-items: center;
+  }
+
+  &__title {
+    grid-row-start: 1;
+  }
+
+  &__subtitle {
+    font-family: $font-primary;
+    grid-row-start: 2;
+    width: 264.8px;
+    height: 38.4px;
+    font-size: 12.8px;
+    color: $color-primary;
+    line-height: 18px;
+    margin-bottom: 17.5px;
+  }
+}
