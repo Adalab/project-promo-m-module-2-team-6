@@ -5,10 +5,16 @@
   align-items: center;
   border-top: 1px solid $color-footer-border;
   height: 110px;
-  width: 100vw; /*revisar altura*/
+  width: 100vw;
   background-color: white;
   position: fixed;
   bottom: 0;
+
+  @media all and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   &__copy {
     font-family: $font-primary;
@@ -16,11 +22,20 @@
     font-size: 14px;
     opacity: 0.5;
     padding-top: 0;
+
+    @media all and (min-width: 768px) {
+      font-size: 14px;
+      margin-left: 40px;
+    }
   }
 
   &__image {
     width: 103px;
     height: 50px;
     padding-top: 12px;
+
+    @media all and (min-width: 768px) {
+      margin-right: 40px;
+    }
   }
 }
