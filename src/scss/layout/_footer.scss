@@ -4,8 +4,11 @@
   justify-content: center;
   align-items: center;
   border-top: 1px solid $color-footer-border;
-  height: 170px; /*revisar altura*/
+  height: 110px;
+  width: 100vw; /*revisar altura*/
   background-color: white;
+  position: fixed;
+  bottom: 0;
 
   &__copy {
     font-family: $font-primary;
