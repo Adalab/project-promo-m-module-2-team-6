@@ -15,18 +15,16 @@
   text-transform: uppercase;
   margin-left: 51px;
 }
+
 .section__design--icon {
   width: 21px;
   height: 18px;
   color: $color-icons;
+  background-color: red;
 }
 /*flecha<i class="fas fa-angle-up"></i>
-mobile<i class="fas fa-mobile-alt"></i>
 design<i class="far fa-object-ungroup"></i>
-email<i class="far fa-envelope"></i>
-linkedin<i class="fab fa-linkedin-in"></i>
-github<i class="fab fa-github-alt"></i>
-papelera<i class="far fa-trash-alt"></i>*/
+*/
 
 .section__design--subtitle {
   grid-column: span 1;
@@ -42,17 +40,62 @@ papelera<i class="far fa-trash-alt"></i>*/
 .section__desing--boxcolor1 {
   grid-column: 2/3;
   grid-row: 2;
+  margin-top: 22px;
+}
+.section__design--palette {
+  display: flex;
+  flex-direction: row;
+}
+.box1-1 {
   width: 30px;
   height: 25px;
-  border: 1px solid $color-palette-g1;
-  color: $color-palette-g1;
-  margin-top: 22px;
+  background-color: $color-palette-g1;
+}
+.box1-2 {
+  width: 30px;
+  height: 25px;
+  background-color: $color-palette-g2;
+}
+.box1-3 {
+  width: 30px;
+  height: 25px;
+  background-color: $color-palette-g3;
 }
 .section__desing--boxcolor2 {
   grid-column: 2/3;
   grid-row: 3;
 }
+.box2-1 {
+  width: 30px;
+  height: 25px;
+  background-color: $color-palette-r1;
+}
+.box2-2 {
+  width: 30px;
+  height: 25px;
+  background-color: $color-palette-r2;
+}
+.box2-3 {
+  width: 30px;
+  height: 25px;
+  background-color: $color-palette-r3;
+}
 .section__desing--boxcolor3 {
   grid-column: 2/3;
   grid-row: 4;
+}
+.box3-1 {
+  width: 30px;
+  height: 25px;
+  background-color: $color-palette-b1;
+}
+.box3-2 {
+  width: 30px;
+  height: 25px;
+  background-color: $color-palette-b2;
+}
+.box3-3 {
+  width: 30px;
+  height: 25px;
+  background-color: $color-palette-b3;
 }

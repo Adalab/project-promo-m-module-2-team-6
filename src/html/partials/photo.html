@@ -1,14 +1,14 @@
 <section class="section__photo">
   <form action="/signup" method="POST">
-    <i class="far fa-trash-alt"></i>
     <label for="buttonreset">
+        <i class="far fa-trash-alt icongarbage"></i>
       <input
         class="section__photo--button"
         id="buttonreset"
         type="reset"
         value="Reset"
     /></label>
-    <div class="section__photo--card">
+    <article class="section__photo--card">
       <div class="section__photo--boxnamejob">
         <h3 class="section__photo--name">nombre apellido</h3>
         <h4 class="section__photo--job">Front-end developer</h4>
@@ -23,11 +23,13 @@
       <nav class="section__photo--nav">
         <ul class="section__photo--list">
           <li class="section__photo--link">
-            <a href="" target="_blank"><i class="fas fa-mobile-alt"></i></a>
+            <a class="section__photo--icon" href="" target="_blank"
+              ><i class="fas fa-mobile-alt"></i
+            ></a>
           </li>
           <li class="section__photo--link">
-            <a class="section__photo--link" href="" target="_blank"
-              ><i class="far fa-envelope section__photo--icon"></i
+            <a class="section__photo--icon" href="" target="_blank"
+              ><i class="far fa-envelope"></i
             ></a>
           </li>
           <li class="section__photo--link">
@@ -39,12 +41,15 @@
             ></a>
           </li>
           <li class="section__photo--link">
-            <a href="https://github.com/Laura733" target="_blank"
+            <a
+              class="section__photo--icon"
+              href="https://github.com/Laura733"
+              target="_blank"
               ><i class="fab fa-github-alt"></i
             ></a>
           </li>
         </ul>
       </nav>
-    </div>
+    </article>
   </form>
 </section>
