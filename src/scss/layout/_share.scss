@@ -42,15 +42,10 @@
       outline: none;
       cursor: pointer;
       margin-bottom: 30px;
-      &.fa-address-card-o {
+      .fa-address-card-o {
         width: 25px;
         height: 22px;
         font-size: 22px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: normal;
         color: $color-background-cards;
         margin-right: 9px;
       }
@@ -102,11 +97,6 @@
         height: 18px;
         margin-bottom: 5px;
         font-size: 18px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: normal;
         text-align: center;
         color: white;
       }
