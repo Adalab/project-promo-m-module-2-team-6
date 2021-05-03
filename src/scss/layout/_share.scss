@@ -5,26 +5,36 @@
   align-items: center;
   border-top: 1px solid #d8d8d8;
 
-  .share__header {
+  &__header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     color: #54585a;
     padding-top: 10px;
     border-bottom: 1px $color-icons;
+    &--icon {
+      width: 21px;
+      height: 18px;
+      color: $color-icons;
+      font-size: 18px;
+    }
     &--title {
       text-transform: uppercase;
       font-size: 18px;
       font-family: "Open Sans", sans-serif;
       font-weight: 600;
     }
-    &--icon {
-      color: $color-icons;
-      padding-right: 5px;
-    }
   }
 
-  .share__create {
+  &__arrow {
+    width: 21px;
+    height: 18px;
+    color: $color-icons;
+    font-size: 18px;
+  }
+
+  &__create {
     display: flex;
     justify-content: center;
     &--button {
