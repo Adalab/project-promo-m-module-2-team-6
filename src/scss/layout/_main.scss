@@ -12,6 +12,9 @@
     width: 15.62rem;
     height: 3.93rem;
     margin-bottom: 35px;
+    @media all and (min-width: 1220px) {
+      padding-top: 50px;
+    }
 
     @media all and (min-width: 768px) {
       width: 419px;
@@ -101,6 +104,7 @@
     border-radius: 21px solid $color-primary;
     background-color: $color-button;
     margin-top: 40px;
+    margin-bottom: 100px;
 
     @media all and (min-width: 768px) {
       margin-top: 186px;
