@@ -1,5 +1,26 @@
-.form {
+.form-box {
+  width: 100wv;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 27px 19px 30px 20px;
+  font-size: 14px;
+}
+input {
+  height: 30px;
+  border: solid 1px $color-palette-g3;
+  margin-bottom: 20px;
+  margin-top: 7px;
+}
+
+label {
+  color: $color-palette-g1;
+}
+
+.button-image {
+  width: 140px;
+  color: $color-background-cards;
+  background-color: $color-icons;
+  border: none; //sombreado
+  border-radius: 3px;
 }
