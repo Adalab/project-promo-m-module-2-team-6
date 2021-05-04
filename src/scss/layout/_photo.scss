@@ -1,0 +1,77 @@
+.section__photo {
+  width: 100%;
+  background-color: $color-background-photo1;
+  /*INCLUIR*/
+  padding: 38px 35px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section__photo--button {
+  width: 75px;
+  height: 30px;
+  font-family: $font-primary;
+  font-size: 12px;
+  color: $color-secondary;
+  text-transform: uppercase;
+  border-radius: 20px;
+  border: 1px solid $color-background-cards;
+  background-color: $color-background-photo1;
+  margin-bottom: 20px;
+}
+/*.icongarbage {
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    color: $color-palette-g2;
+    z-index: 2;
+}*/
+.section__photo--card {
+  background-color: $color-background-cards;
+  padding-top: 21px;
+  border-radius: 3px;
+}
+.section__photo--boxnamejob {
+  border-left: 5px solid $color-palette-g2;
+  padding: 0px 20px 0px 14px;
+  margin-bottom: 10px;
+}
+.section__photo--name {
+  font-family: $font-cards;
+  font-size: 18px;
+  color: $color-primary;
+  text-transform: capitalize;
+  padding-bottom: 4px;
+}
+.section__photo--job {
+  font-family: $font-cards;
+  font-size: 16px;
+  color: $color-secondary;
+  /*font-weight: lighter; REVISAR*/
+}
+.section__photo--img {
+  height: 200px;
+}
+.section__photo--image {
+  width: 100%;
+  height: 100%;
+}
+.section__photo--nav {
+  padding: 10px 20px 12px 20px;
+}
+.section__photo--list {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  color: $color-primary;
+}
+.section__photo--link {
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  border: 1px solid $color-palette-g3;
+  border-radius: 20px;
+}
+.section__photo--icon {
+}

@@ -1,0 +1,101 @@
+.section__design {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: reapet(5, 40px);
+  padding: 27px 20px 0 20px;
+  border-bottom: 1px solid $color-border;
+}
+.section__design--title {
+  width: 80%;
+  grid-column: span 3;
+  font-family: $font-primary;
+  font-size: 18px;
+  color: $color-secondary;
+  text-transform: uppercase;
+  margin-left: 51px;
+}
+
+.section__design--icon {
+  width: 21px;
+  height: 18px;
+  color: $color-icons;
+  background-color: red;
+}
+/*flecha<i class="fas fa-angle-up"></i>
+design<i class="far fa-object-ungroup"></i>
+*/
+
+.section__design--subtitle {
+  grid-column: span 1;
+  grid-row: 2;
+  font-family: $font-primary;
+  font-size: 14px;
+  color: $color-secondary;
+  text-transform: uppercase;
+  margin-top: 22px;
+  font-weight: lighter;
+  margin-left: 39px;
+}
+.section__desing--boxcolor1 {
+  grid-column: 2/3;
+  grid-row: 2;
+  margin-top: 22px;
+}
+.section__design--palette {
+  display: flex;
+  flex-direction: row;
+}
+.box1-1 {
+  width: 30px;
+  height: 25px;
+  background-color: $color-palette-g1;
+}
+.box1-2 {
+  width: 30px;
+  height: 25px;
+  background-color: $color-palette-g2;
+}
+.box1-3 {
+  width: 30px;
+  height: 25px;
+  background-color: $color-palette-g3;
+}
+.section__desing--boxcolor2 {
+  grid-column: 2/3;
+  grid-row: 3;
+}
+.box2-1 {
+  width: 30px;
+  height: 25px;
+  background-color: $color-palette-r1;
+}
+.box2-2 {
+  width: 30px;
+  height: 25px;
+  background-color: $color-palette-r2;
+}
+.box2-3 {
+  width: 30px;
+  height: 25px;
+  background-color: $color-palette-r3;
+}
+.section__desing--boxcolor3 {
+  grid-column: 2/3;
+  grid-row: 4;
+}
+.box3-1 {
+  width: 30px;
+  height: 25px;
+  background-color: $color-palette-b1;
+}
+.box3-2 {
+  width: 30px;
+  height: 25px;
+  background-color: $color-palette-b2;
+}
+.box3-3 {
+  width: 30px;
+  height: 25px;
+  background-color: $color-palette-b3;
+}
