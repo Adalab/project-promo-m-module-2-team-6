@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Card preview</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script
+      src="https://kit.fontawesome.com/316a162693.js"
+      crossorigin="anonymous"
+    ></script>
     <link
     href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
-    rel="stylesheet"><link
-      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+    rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
 
@@ -18,81 +19,154 @@
       
       <main class="main-cards">
           <div class="main-cards__container">
-              
+              <section class="section__photo">
+                <form action="/signup" method="POST">
+                  <label for="buttonreset">
+                      <i class="far fa-trash-alt icongarbage"></i>
+                    <input
+                      class="section__photo--button"
+                      id="buttonreset"
+                      type="reset"
+                      value="Reset"
+                  /></label>
+                  <article class="section__photo--card">
+                    <div class="section__photo--boxnamejob">
+                      <h3 class="section__photo--name">nombre apellido</h3>
+                      <h4 class="section__photo--job">Front-end developer</h4>
+                    </div>
+                    <div class="section__photo--img">
+                      <img
+                        class="section__photo--image"
+                        src="https://placekitten.com/200/200"
+                        alt="photograph"
+                      />
+                    </div>
+                    <nav class="section__photo--nav">
+                      <ul class="section__photo--list">
+                        <li class="section__photo--link">
+                          <a class="section__photo--icon" href="" target="_blank"
+                            ><i class="fas fa-mobile-alt"></i
+                          ></a>
+                        </li>
+                        <li class="section__photo--link">
+                          <a class="section__photo--icon" href="" target="_blank"
+                            ><i class="far fa-envelope"></i
+                          ></a>
+                        </li>
+                        <li class="section__photo--link">
+                          <a
+                            class="section__photo--icon"
+                            href="linkein.com/in/laura-garcía-bonet-11a46b11a"
+                            target="_blank"
+                            ><i class="fab fa-linkedin-in"></i
+                          ></a>
+                        </li>
+                        <li class="section__photo--link">
+                          <a
+                            class="section__photo--icon"
+                            href="https://github.com/Laura733"
+                            target="_blank"
+                            ><i class="fab fa-github-alt"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </article>
+                </form>
+              </section>
+
               <form class="main-cards__form">
-<<<<<<< HEAD
                   <section class="section__design">
-                    <h2 class="section__design--title">diseña</h2>
-                    <form class="section__design--form" action="/signup" method="POST">
+                    <div class="section__design--icon">
+                      <i class="far fa-object-ungroup"></i>
+                      <h2 class="section__design--title">diseña</h2>
+                    </div>
+
+                    <form action="/signup" method="POST">
                       <h3 class="section__design--subtitle">Colores</h3>
-                      <label for="colorpalette1">
+                      <label class="section__desing--boxcolor1" for="colorpalette1">
                         <input
-                          class="section__desing--boxcolor1"
                           id="colorpalette1"
                           type="radio"
                           value="green"
                           name="design-color"
                         />
+                        <ul class="section__design--palette">
+                          <li class="box1-1"></li>
+                          <li class="box1-2"></li>
+                          <li class="box1-3"></li>
+                        </ul>
                       </label>
-                      <label for="colorpalette2">
-                        <input
-                          id="colorpalette2"
-                          type="radio"
-                          value="red"
-                          name="design-color"
-                        />
+                      <label class="section__desing--boxcolor2" for="colorpalette2">
+                        <input id="colorpalette2" type="radio" value="red" name="design-color" />
+                        <ul class="section__design--palette">
+                          <li class="box2-1"></li>
+                          <li class="box2-2"></li>
+                          <li class="box2-3"></li>
+                        </ul>
                       </label>
-                      <label for="colorpalette3">
+                      <label class="section__desing--boxcolor3" for="colorpalette3">
                         <input id="colorpalette3" type="radio" value="blue" name="design-color" />
+                        <ul class="section__design--palette">
+                          <li class="box3-1"></li>
+                          <li class="box3-2"></li>
+                          <li class="box3-3"></li>
+                        </ul>
                       </label>
                     </form>
                   </section>
 
-                  
+                  <section class="form">
+                      <form action="" method="POST">
+                          <label for="full-name">Nombre completo</label>
+                          <input class="" placeholder="Ej: Sally Hill" type="text" name="full-name">
+
+                          <label for="">Puesto</label>
+                          <input class="" placeholder="Ej: Front-End unicorn" type="text" name="">
+
+                          <label for="">Imagen de perfil</label>
+                          <input class="" type="submit" value="Añadir imagen">
+
+                          <label for="">Email</label>
+                          <input placeholder="Ej: sally-hill@gmail.com" type="email" name="">
+
+                          <label for="">Teléfono</label>
+                          <input class="" placeholder="Ej: 555-55-55-55" type="tel">
+
+                          <label for="">LinkedIn</label>
+                          <input class="" placeholder="Ej: linkedon.com/in/sally.hill" type="text">
+
+                          <label for="">Github</label>
+                          <input class="" placeholder="Ej: @sally-hill" type="text">
+
+                          <label for="">Github</label>
+                          <input class="" placeholder="Ej: @sally-hill" type="text">
+                      </form>
+                  </section>
                   <fieldset class="share">
                     <div class="share__header">
-                      <h2 class="share__header--title">
-                        <i class="fas fa-share-alt share__header--icon" aria-hidden="true" title="Comparte">Comparte</i>
-=======
-                  
-                  
-                  <fieldset class="share">
-                    <div class="share__header">
-                      <h2 class="share__header--title">Comparte
-                        <i class="fas fa-share-alt share__header--icon" aria-hidden="true" title="Comparte"></i>
->>>>>>> 529ac22896cd09eaed9999ab3513b042e2ceb2ff
-                      </h2>
+                      <i class="share__header--icon fas fa-share-alt" title="Comparte"></i>
+                      <h2 class="share__header--title">Comparte</h2>
                     </div>
+                    <i class="share__arrow fa fa-chevron-down"></i>
 
                     <div class="share__create hidden__container">
                       <button class="share__create--button">
-                        <i class="far fa-address-card-o" aria-hidden="true"></i>Crear tarjeta
+                        <i class="far fa-address-card-o"></i>Crear tarjeta
                       </button>
                     </div>
                     
                     <div class="share__result">
                       <p class="share__result--title">La tarjeta ha sido creada:</p>
-<<<<<<< HEAD
-                      <a class="share__result--link" href=""></a>
-=======
                       <a class="share__result--link" href="">https://awesome-profile-card.com?id=A456DF0001</a>
->>>>>>> 529ac22896cd09eaed9999ab3513b042e2ceb2ff
                       <button class="share__result--twitter">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>Compartir en Twitter
+                        <i class="fa fa-twitter"></i>Compartir en Twitter
                       </button>
                     </div>  
                   </fieldset>
               </form>
           </div>
       </main>
-<<<<<<< HEAD
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          
-
-        </small>
-=======
       <footer class="footer">
         <div class="footer__copy">Awesome profile-cards &copy 2021</div>
         <img
@@ -100,7 +174,6 @@
           src="./assets/images/logo-adalab.png"
           alt="logo-adalab"
         />
->>>>>>> 529ac22896cd09eaed9999ab3513b042e2ceb2ff
       </footer>
 
 
