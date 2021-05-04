@@ -4,127 +4,111 @@
   justify-content: center;
   align-items: center;
   border-top: 1px solid #d8d8d8;
-  margin: 0 20px 0 20px;
 
-  .share__header {
-    margin-bottom: 30px;
+  &__header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     color: #54585a;
     padding-top: 10px;
-    border-bottom: 1px $color-icons;
+    &--icon {
+      width: 21px;
+      height: 18px;
+      color: $color-icons;
+      font-size: 18px;
+    }
     &--title {
       text-transform: uppercase;
       font-size: 18px;
       font-family: "Open Sans", sans-serif;
       font-weight: 600;
     }
-    &--icon {
+  }
+
+  &__arrow {
+    width: 21px;
+    height: 18px;
+    color: $color-icons;
+    font-size: 18px;
+  }
+
+  &__create {
+    display: flex;
+    justify-content: center;
+    &--button {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: 199px;
+      height: 50px;
+      text-transform: uppercase;
+      font-family: $font-primary;
+      font-size: 18px;
+      color: $color-background-cards;
+      background-color: $color-icons;
+      border: 1px solid $color-icons;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+      border-radius: 12px;
+      outline: none;
+      cursor: pointer;
+      .fa-address-card-o {
+        width: 25px;
+        height: 22px;
+        font-size: 22px;
+        font-family: $font-primary;
+        color: $color-background-cards;
+        margin-right: 9px;
+      }
+    }
+  }
+
+  &__result {
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    &--title {
+      margin: 20px 0 5px 0;
+      font-family: $font-primary;
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+      color: #54585a;
+    }
+    &--link {
+      width: 300px;
+      font-family: $font-primary;
+      font-size: 12px;
+      font-weight: 600;
+      text-align: center;
       color: $color-icons;
-      padding-right: 5px;
     }
-
-    .share__create {
+    &--twitter {
       display: flex;
-      border-bottom: #d8d8d8 solid 1px;
-      justify-content: center;
-      &--button {
-        margin-top: 20px;
-        width: 199px;
-        height: 50px;
-        text-transform: uppercase;
-        font-family: $font-primary;
-        font-size: 18px;
-        color: $color-background-cards;
-        box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-        background-color: $color-icons;
-        border: 1px solid $color-secondary;
-        border-radius: 12px;
-        outline: none;
-        cursor: pointer;
-        color: $color-background-cards;
-        margin-bottom: 30px;
-        &.fa-address-card-o {
-          width: 25px;
-          height: 22px;
-          font-size: 22px;
-          font-weight: normal;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: normal;
-          letter-spacing: normal;
-          color: $color-background-cards;
-          margin-right: 9px;
-        }
-      }
-    }
-
-    .share__result {
-      width: 95vw;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
-      margin: 0 20px 30px 20px;
-      border-top: 1px solid #d8d8d8;
-      border-bottom: 1px solid #d8d8d8;
-      &--title {
-        margin: 20px 0 5px 0;
-        font-family: $font-primary;
+      background-color: #00a0f5;
+      font-family: $font-primary;
+      font-size: 14px;
+      line-height: 1.43;
+      color: $color-background-cards;
+      width: 181px;
+      height: 30px;
+      margin: 10px 0 30px 0;
+      border-radius: 3px;
+      border: transparent;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+      text-decoration: none;
+      .fa-twitter {
+        width: 18px;
+        height: 18px;
+        margin-bottom: 5px;
         font-size: 18px;
-        font-weight: 600;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: normal;
         text-align: center;
-        color: $color-background-cards;
-      }
-      &--link {
-        width: 300px;
-        font-family: $font-primary;
-        font-size: 12px;
-        font-weight: 600;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        text-align: center;
-        color: $color-icons;
-      }
-      &--twitter {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #00a0f5;
-        font-family: $font-primary;
-        font-size: 14px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.43;
-        letter-spacing: normal;
-        color: $color-background-cards;
-        width: 181px;
-        height: 30px;
-        margin: 10px 0 30px 0;
-        border-radius: 3px;
-        border: transparent;
-        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
-        text-decoration: none;
-        .fa-twitter {
-          width: 18px;
-          height: 18px;
-          margin-bottom: 5px;
-          font-size: 18px;
-          font-weight: normal;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: normal;
-          letter-spacing: normal;
-          text-align: center;
-          color: white;
-        }
+        color: white;
       }
     }
   }

@@ -1,0 +1,109 @@
+.main {
+  height: 100vh;
+  color: $color-icons;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: $color-background-landing;
+
+  &__img {
+    width: 15.62rem;
+    height: 3.93rem;
+    margin-bottom: 35px;
+
+    @media all and (min-width: 768px) {
+      width: 419px;
+      height: 105px;
+      margin-bottom: 31px;
+    }
+  }
+
+  &__title {
+    font-family: $font-title;
+    font-size: 19.2px;
+    width: 270px;
+    height: 24px;
+    line-height: 19.2px;
+
+    @media all and (min-width: 768px) {
+      width: 278px;
+      font-size: 24px;
+      font-weight: 900;
+    }
+  }
+
+  &__subtitle {
+    font-family: $font-primary;
+    width: 250px;
+    font-size: 12.8px;
+    color: $color-primary;
+    line-height: 25px;
+    margin-bottom: 17.5px;
+    font-weight: normal;
+    line-height: normal;
+    padding-bottom: 10px;
+
+    @media all and (min-width: 768px) {
+      width: 331px;
+      font-size: 16px;
+      font-weight: normal;
+    }
+  }
+
+  &__container {
+    width: 268px;
+    border: 1.6px solid $color-border;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    padding: 15px 20px;
+
+    @media all and (min-width: 768px) {
+      width: 325px;
+      font-weight: normal;
+    }
+  }
+
+  &__icon {
+    font-size: 22.4px;
+
+    @media all and (min-width: 768px) {
+      font-size: 28px;
+    }
+  }
+
+  &__text {
+    font-family: $font-primary;
+    color: $color-secondary;
+    font-size: 12.8px;
+
+    @media all and (min-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  &__button {
+    text-decoration: none;
+    color: $color-background-cards;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    line-height: normal;
+    width: 129px;
+    height: 42px;
+    border-radius: 21px;
+    line-height: 42px;
+    border-radius: 21px solid $color-primary;
+    background-color: $color-button;
+    margin-top: 40px;
+
+    @media all and (min-width: 768px) {
+      margin-top: 186px;
+    }
+  }
+}
