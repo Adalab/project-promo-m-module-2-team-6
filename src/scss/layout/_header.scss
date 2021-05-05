@@ -1,1 +1,12 @@
+.header {
+  @media all and (min-width: 768px) {
+    height: 111px;
+    padding-top: 31px;
+    padding-left: 41px;
+  }
 
+  &__imag {
+    width: 201px;
+    height: 50px;
+  }
+}

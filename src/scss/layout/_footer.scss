@@ -4,15 +4,10 @@
   justify-content: center;
   align-items: center;
   border-top: 1px solid $color-footer-border;
-  height: 110px;
   width: 100vw;
   background-color: white;
   position: fixed;
   bottom: 0;
-
-  @media all and (min-width: 1220px) {
-    height: 45px;
-  }
 
   @media all and (min-width: 768px) {
     display: flex;
@@ -25,7 +20,7 @@
     color: $color-footer-text;
     font-size: 14px;
     opacity: 0.5;
-    padding-top: 0;
+    padding-top: 18px;
 
     @media all and (min-width: 768px) {
       font-size: 14px;
