@@ -13,6 +13,7 @@
     href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/main.css" />
+  
   </head>
 
   <body class="cards-page">
@@ -20,66 +21,60 @@
       <main class="main-cards">
           <div class="main-cards__container">
               <section class="section__photo">
-                <form action="/signup" method="POST">
-                  <label for="buttonreset">
-                      <i class="far fa-trash-alt icongarbage"></i>
-                    <input
-                      class="section__photo--button"
-                      id="buttonreset"
-                      type="reset"
-                      value="Reset"
-                  /></label>
-                  <article class="section__photo--card">
-                    <div class="section__photo--boxnamejob">
-                      <h3 class="section__photo--name">nombre apellido</h3>
-                      <h4 class="section__photo--job">Front-end developer</h4>
-                    </div>
-                    <div class="section__photo--img">
-                      <img
-                        class="section__photo--image"
-                        src="https://placekitten.com/200/200"
-                        alt="photograph"
-                      />
-                    </div>
-                    <nav class="section__photo--nav">
-                      <ul class="section__photo--list">
-                        <li class="section__photo--link">
-                          <a class="section__photo--icon" href="" target="_blank"
-                            ><i class="fas fa-mobile-alt"></i
-                          ></a>
-                        </li>
-                        <li class="section__photo--link">
-                          <a class="section__photo--icon" href="" target="_blank"
-                            ><i class="far fa-envelope"></i
-                          ></a>
-                        </li>
-                        <li class="section__photo--link">
-                          <a
-                            class="section__photo--icon"
-                            href="linkein.com/in/laura-garcía-bonet-11a46b11a"
-                            target="_blank"
-                            ><i class="fab fa-linkedin-in"></i
-                          ></a>
-                        </li>
-                        <li class="section__photo--link">
-                          <a
-                            class="section__photo--icon"
-                            href="https://github.com/Laura733"
-                            target="_blank"
-                            ><i class="fab fa-github-alt"></i
-                          ></a>
-                        </li>
-                      </ul>
-                    </nav>
-                  </article>
-                </form>
+                <button class="section__photo--button">
+                  <i class="far fa-trash-alt icongarbage"></i>reset
+                </button>
+                <article class="section__photo--card">
+                  <div class="section__photo--boxnamejob">
+                    <h3 class="section__photo--name">nombre apellido</h3>
+                    <h4 class="section__photo--job">Front-end developer</h4>
+                  </div>
+                  <div class="section__photo--img">
+                    <img
+                      class="section__photo--image"
+                      src="https://placekitten.com/200/200"
+                      alt="photograph"
+                    />
+                  </div>
+                  <nav class="section__photo--nav">
+                    <ul class="section__photo--list">
+                      <li class="section__photo--link">
+                        <a class="section__photo--icon" href="" target="_blank"
+                          ><i class="fas fa-mobile-alt"></i
+                        ></a>
+                      </li>
+                      <li class="section__photo--link">
+                        <a class="section__photo--icon" href="" target="_blank"
+                          ><i class="far fa-envelope"></i
+                        ></a>
+                      </li>
+                      <li class="section__photo--link">
+                        <a class="section__photo--icon"
+                          href="linkein.com/in/laura-garcía-bonet-11a46b11a"
+                          target="_blank"
+                          ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                      </li>
+                      <li class="section__photo--link">
+                        <a
+                          class="section__photo--icon"
+                          href="https://github.com/Laura733"
+                          target="_blank"
+                          ><i class="fab fa-github-alt"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </nav>
+                </article>
               </section>
 
               <form class="main-cards__form">
                   <section class="section__design">
                     <div class="section__design--icon">
-                      <i class="far fa-object-ungroup"></i>
-                      <h2 class="section__design--title">diseña</h2>
+                      <h2 class="section__design--title">
+                        <i class="far fa-object-ungroup icon--design"></i>diseña
+                        <i class="fas fa-angle-up icon--angle"></i>
+                      </h2>
                     </div>
 
                     <form action="/signup" method="POST">
@@ -117,15 +112,11 @@
                   </section>
 
                   <section class="form">
-<<<<<<< HEAD
-                      <form action="" method="POST">
-=======
                       <div class="form__fill--icon">
                       <i class=""></i>
                       <h2 class="form__fill--title">rellena</h2>
                     </div>
                       <form class="form__box" action="" method="POST">
->>>>>>> 1910672cd518136d93b05eee42c69802e9ae8de7
                           <label for="full-name">Nombre completo</label>
                           <input class="" placeholder="Ej: Sally Hill" type="text" name="full-name">
 
@@ -133,12 +124,10 @@
                           <input class="" placeholder="Ej: Front-End unicorn" type="text" name="">
 
                           <label for="">Imagen de perfil</label>
-<<<<<<< HEAD
-                          <input class="" type="submit" value="Añadir imagen">
-=======
-                          <input class="form__box--button" type="submit" value="Añadir imagen">
-                          <input class="form__box--previewimg" type="image" src="" alt="">
->>>>>>> 1910672cd518136d93b05eee42c69802e9ae8de7
+                          <div class="form__box--container">
+                              <input class="form__box--button" type="submit" value="Añadir imagen">
+                              <input class="form__box--previewimg" type="image" src="" alt=""> <!--provisional-->
+                          </div>
 
                           <label for="">Email</label>
                           <input placeholder="Ej: sally-hill@gmail.com" type="email" name="">
@@ -152,18 +141,6 @@
                           <label for="">Github</label>
                           <input class="" placeholder="Ej: @sally-hill" type="text">
 
-<<<<<<< HEAD
-                          <label for="">Github</label>
-                          <input class="" placeholder="Ej: @sally-hill" type="text">
-                      </form>
-                  </section>
-                  <fieldset class="share">
-                    <div class="share__header">
-                      <i class="share__header--icon fas fa-share-alt" title="Comparte"></i>
-                      <h2 class="share__header--title">Comparte</h2>
-                    </div>
-                    <i class="share__arrow fa fa-chevron-down"></i>
-=======
                       </form>
                   </section>
                   <section class="share">
@@ -172,11 +149,10 @@
                       <h2 class="share__header--title">Comparte</h2>
                       <i class="share__arrow fa fa-chevron-down"></i>
                     </div> 
->>>>>>> 1910672cd518136d93b05eee42c69802e9ae8de7
 
                     <div class="share__create hidden__container">
                       <button class="share__create--button">
-                        <i class="far fa-address-card-o"></i>Crear tarjeta
+                        <i class="far fa-address-card"></i>Crear tarjeta
                       </button>
                     </div>
                     
