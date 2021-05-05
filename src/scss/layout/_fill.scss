@@ -1,17 +1,30 @@
 .form {
-  width: 100wv;
+  width: 100vw;
   height: 100%;
 
   &__fill {
     &--icon {
+      display: flex;
+      margin-top: 10px;
+      margin-left: 20px;
+      color: $color-icons;
+      font-size: 18px;
+      align-items: center;
+
+      .fa-keyboard {
+        margin-right: 10px;
+      }
+
+      .fa-angle-up {
+        color: $color-secondary;
+      }
     }
     &--title {
       font-family: $font-primary;
       font-size: 18px;
       color: $color-secondary;
       text-transform: uppercase;
-      margin-left: 51px;
-      margin-top: 10px;
+      /*margin-left: 51px;*/
     }
   }
 
