@@ -3,8 +3,6 @@
   padding: 0 19px 30px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border-top: 1px solid #d8d8d8;
   @media all and (min-width: 768px) {
     padding-left: 40px;
@@ -17,7 +15,8 @@
 
   &__header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
     color: #54585a;
     padding-top: 10px;
@@ -60,7 +59,7 @@
       border-radius: 12px;
       outline: none;
       cursor: pointer;
-      .fa-address-card-o {
+      .fa-address-card {
         width: 25px;
         height: 22px;
         font-size: 22px;
