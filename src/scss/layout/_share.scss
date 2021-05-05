@@ -1,18 +1,8 @@
 .share {
-  height: 100%;
   padding: 0 19px 30px 20px;
   display: flex;
   flex-direction: column;
   border-top: 1px solid #d8d8d8;
-  @media all and (min-width: 768px) {
-    padding-left: 40px;
-    padding-right: 30px;
-    width: 50vw;
-  }
-  @media all and (min-width: 1200px) {
-    width: 40vw;
-  }
-
   &__header {
     display: flex;
     flex-direction: row;
