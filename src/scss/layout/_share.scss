@@ -1,15 +1,16 @@
-.share {
-  padding: 0 19px 30px 20px;
+.share__container {
+  padding: 20px 30px 20px 30px;
   display: flex;
   flex-direction: column;
   border-top: 1px solid #d8d8d8;
+}
+
+.share {
+  display: flex;
+  justify-content: space-between;
   &__header {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    color: #54585a;
-    padding-top: 10px;
     &--icon {
       width: 21px;
       height: 18px;
@@ -19,16 +20,19 @@
     &--title {
       text-transform: uppercase;
       font-size: 18px;
+      color: #54585a;
       font-family: "Open Sans", sans-serif;
       font-weight: 600;
     }
   }
 
   &__arrow {
-    width: 21px;
-    height: 18px;
-    color: #54585a;
-    font-size: 18px;
+    &--icon {
+      width: 21px;
+      height: 18px;
+      color: #54585a;
+      font-size: 18px;
+    }
   }
 
   &__create {
