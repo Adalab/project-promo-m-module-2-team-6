@@ -5,7 +5,6 @@
   padding: 38px 35px 40px 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 .section__photo--button {
@@ -20,13 +19,11 @@
   background-color: $color-background-photo1;
   margin-bottom: 20px;
 }
-/*.icongarbage {
-    width: 20px;
-    height: 20px;
-    font-size: 18px;
-    color: $color-palette-g2;
-    z-index: 2;
-}*/
+.icongarbage {
+  font-size: 12px;
+  color: $color-secondary;
+  margin-right: 8px;
+}
 .section__photo--card {
   background-color: $color-background-cards;
   padding-top: 21px;
@@ -72,6 +69,9 @@
   font-size: 18px;
   border: 1px solid $color-palette-g3;
   border-radius: 20px;
+  margin-right: 10px;
 }
 .section__photo--icon {
+  font-size: 18px;
+  color: $color-primary;
 }

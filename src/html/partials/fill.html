@@ -1,5 +1,9 @@
 <section class="form">
-    <form action="" method="POST">
+    <div class="form__fill--icon">
+    <i class=""></i>
+    <h2 class="form__fill--title">rellena</h2>
+  </div>
+    <form class="form__box" action="" method="POST">
         <label for="full-name">Nombre completo</label>
         <input class="" placeholder="Ej: Sally Hill" type="text" name="full-name">
 
@@ -7,7 +11,10 @@
         <input class="" placeholder="Ej: Front-End unicorn" type="text" name="">
 
         <label for="">Imagen de perfil</label>
-        <input class="" type="submit" value="Añadir imagen">
+        <div class="form__box--container">
+            <input class="form__box--button" type="submit" value="Añadir imagen">
+            <input class="form__box--previewimg" type="image" src="" alt=""> <!--provisional-->
+        </div>
 
         <label for="">Email</label>
         <input placeholder="Ej: sally-hill@gmail.com" type="email" name="">
@@ -21,7 +28,5 @@
         <label for="">Github</label>
         <input class="" placeholder="Ej: @sally-hill" type="text">
 
-        <label for="">Github</label>
-        <input class="" placeholder="Ej: @sally-hill" type="text">
     </form>
 </section>

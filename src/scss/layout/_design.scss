@@ -2,27 +2,30 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: reapet(5, 40px);
+  grid-template-rows: reapet(4, 20px);
   padding: 27px 20px 0 20px;
   border-bottom: 1px solid $color-border;
 }
 .section__design--title {
-  width: 80%;
   grid-column: span 3;
+  grid-row: 1  ;
   font-family: $font-primary;
   font-size: 18px;
   color: $color-secondary;
   text-transform: uppercase;
-  margin-left: 51px;
 }
 
-.section__design--icon {
-  width: 21px;
-  height: 18px;
+.icon--design {
+  font-size: 18px;
   color: $color-icons;
-  background-color: red;
+  margin-right: 10px;
 }
-/*flecha<i class="fas fa-angle-up"></i>
+.icon--angle {
+  font-size: 18px;
+  color: $color-secondary;
+  margin-right: 20px;
+}
+/*
 design<i class="far fa-object-ungroup"></i>
 */
 
