@@ -1,8 +1,15 @@
 .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 111px;
+  padding-bottom: 41px;
+  padding-top: 50px;
+
   @media all and (min-width: 768px) {
-    height: 111px;
     padding-top: 31px;
     padding-left: 41px;
+    justify-content: flex-start;
   }
 
   &__imag {
