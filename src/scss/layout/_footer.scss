@@ -6,8 +6,6 @@
   border-top: 1px solid $color-footer-border;
   width: 100vw;
   background-color: white;
-  position: fixed;
-  bottom: 0;
 
   @media all and (min-width: 768px) {
     display: flex;
