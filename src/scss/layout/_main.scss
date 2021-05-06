@@ -7,10 +7,12 @@
   text-align: center;
   justify-content: center;
   background-color: $color-background-landing;
-  padd &__img {
+
+  &__img {
     width: 15.62rem;
     height: 3.93rem;
     margin-bottom: 35px;
+
     @media all and (min-width: 1220px) {
       padding-top: 50px;
     }
