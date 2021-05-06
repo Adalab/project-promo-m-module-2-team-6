@@ -6,6 +6,12 @@
   padding: 27px 20px 0 20px;
   border-bottom: 1px solid $color-border;
 }
+.section__design--contain {
+  grid-column: span 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .section__design--title {
   grid-column: span 3;
   grid-row: 1;
@@ -20,8 +26,9 @@
   margin-right: 10px;
 }
 .icon--angle {
-  font-size: 18px;
+  font-size: 22px;
   color: $color-secondary;
+  padding-right: 10px;
 }
 /*
 design<i class="far fa-object-ungroup"></i>
@@ -36,70 +43,75 @@ design<i class="far fa-object-ungroup"></i>
   text-transform: uppercase;
   margin-top: 22px;
   font-weight: lighter;
-  margin-left: 39px;
+  margin-left: 19px;
+
+  @media all and (min-width: 768px) {
+    margin-left: 0px;
+  }
 }
 .section__desing--boxcolor {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   grid-column: 2/3;
   grid-row: 2;
+  padding-right: 10px;
   margin-top: 22px;
 }
+.section__design--check {
+  margin: 0px 10px 0px 0px;
+}
 .section__design--palette {
-  width: 90px;
   display: flex;
   flex-direction: row;
 }
-.box1-1 {
+.box {
   width: 30px;
   height: 25px;
+}
+.color1-1 {
   background-color: $color-palette-g1;
 }
-.box1-2 {
-  width: 30px;
-  height: 25px;
+.color1-2 {
   background-color: $color-palette-g2;
 }
-.box1-3 {
-  width: 30px;
-  height: 25px;
+.color1-3 {
   background-color: $color-palette-g3;
 }
 .section__desing--boxcolor2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   grid-column: 2/3;
   grid-row: 3;
+  padding-right: 10px;
+  margin-top: 20px;
 }
-.box2-1 {
-  width: 30px;
-  height: 25px;
+.color2-1 {
   background-color: $color-palette-r1;
 }
-.box2-2 {
-  width: 30px;
-  height: 25px;
+.color2-2 {
   background-color: $color-palette-r2;
 }
-.box2-3 {
-  width: 30px;
-  height: 25px;
+.color2-3 {
   background-color: $color-palette-r3;
 }
 .section__desing--boxcolor3 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   grid-column: 2/3;
   grid-row: 4;
+  padding-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
-.box3-1 {
-  width: 30px;
-  height: 25px;
+.color3-1 {
   background-color: $color-palette-b1;
 }
-.box3-2 {
-  width: 30px;
-  height: 25px;
+.color3-2 {
   background-color: $color-palette-b2;
 }
-.box3-3 {
-  width: 30px;
-  height: 25px;
+.color3-3 {
   background-color: $color-palette-b3;
 }

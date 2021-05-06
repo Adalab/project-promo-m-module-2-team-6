@@ -1,7 +1,6 @@
 .section__photo {
   width: 100%;
-  background-color: $color-background-photo1;
-  /*INCLUIR*/
+  background-color: rgba(221, 233, 237, 100);
   padding: 38px 35px 40px 40px;
   display: flex;
   flex-direction: column;
@@ -19,6 +18,14 @@
   border: 1px solid $color-background-cards;
   background-color: $color-background-photo1;
   margin-bottom: 20px;
+
+  @media all and (min-width: 768px) {
+    margin-left: 25px;
+  }
+
+  @media all and (min-width: 1200px) {
+    margin-left: 173px;
+  }
 }
 .icongarbage {
   font-size: 12px;
@@ -29,6 +36,16 @@
   background-color: $color-background-cards;
   padding-top: 21px;
   border-radius: 3px;
+
+  @media all and (min-width: 768px) {
+    margin-left: 25px;
+    margin-right: 24px;
+  }
+
+  @media all and (min-width: 1200px) {
+    margin-left: 173px;
+    margin-right: 172px;
+  }
 }
 .section__photo--boxnamejob {
   border-left: 5px solid $color-palette-g2;
