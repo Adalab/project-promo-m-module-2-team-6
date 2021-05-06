@@ -2,20 +2,18 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: reapet(4, 20px);
+  grid-template-rows: 4;
   padding: 27px 20px 0 20px;
   border-bottom: 1px solid $color-border;
-
 }
 .section__design--title {
   grid-column: span 3;
-  grid-row: 1  ;
+  grid-row: 1;
   font-family: $font-primary;
   font-size: 18px;
   color: $color-secondary;
   text-transform: uppercase;
 }
-
 .icon--design {
   font-size: 18px;
   color: $color-icons;
@@ -24,7 +22,6 @@
 .icon--angle {
   font-size: 18px;
   color: $color-secondary;
-  margin-right: 20px;
 }
 /*
 design<i class="far fa-object-ungroup"></i>
@@ -47,6 +44,7 @@ design<i class="far fa-object-ungroup"></i>
   margin-top: 22px;
 }
 .section__design--palette {
+  width: 90px;
   display: flex;
   flex-direction: row;
 }
