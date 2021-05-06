@@ -11,6 +11,7 @@
   &__header {
     display: flex;
     flex-direction: row;
+    align-items: center;
     &--icon {
       width: 21px;
       height: 18px;
@@ -27,6 +28,7 @@
   }
 
   &__arrow {
+    cursor: pointer;
     &--icon {
       width: 21px;
       height: 18px;
@@ -60,7 +62,16 @@
         color: white;
         margin-right: 9px;
       }
+      &:disabled {
+        background-color: gray;
+        border: 1px solid gray;
+        cursor: not-allowed;
+      }
     }
+  }
+
+  .hidden {
+    display: none;
   }
 
   &__result {
@@ -78,7 +89,6 @@
       color: #54585a;
     }
     &--link {
-      width: 300px;
       font-family: $font-primary;
       font-size: 12px;
       font-weight: 600;
@@ -104,6 +114,7 @@
       border: transparent;
       box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
       text-decoration: none;
+      cursor: pointer;
       .fa-twitter {
         width: 18px;
         height: 18px;
