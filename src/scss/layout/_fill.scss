@@ -3,6 +3,8 @@
   height: 100%;
 
   &__fill {
+    display: flex;
+    justify-content: space-between;
     &--icon {
       display: flex;
       margin-top: 10px;
@@ -14,10 +16,6 @@
       .fa-keyboard {
         margin-right: 10px;
       }
-
-      .fa-angle-up {
-        color: $color-secondary;
-      }
     }
     &--title {
       font-family: $font-primary;
@@ -25,6 +23,13 @@
       color: $color-secondary;
       text-transform: uppercase;
       /*margin-left: 51px;*/
+    }
+
+    &--arrow-up {
+      color: $color-secondary;
+      font-size: 22px;
+      padding-right: 30px;
+      padding-top: 5px;
     }
   }
 
