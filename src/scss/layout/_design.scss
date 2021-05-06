@@ -38,7 +38,9 @@ design<i class="far fa-object-ungroup"></i>
   font-weight: lighter;
   margin-left: 39px;
 }
-.section__desing--boxcolor1 {
+.section__desing--boxcolor {
+  display: flex;
+  align-items: center;
   grid-column: 2/3;
   grid-row: 2;
   margin-top: 22px;
