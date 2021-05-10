@@ -2,15 +2,17 @@
 
 // Collapsable
 
-const arrow = document.querySelector('.js-hidden');
+const collapsibleShare = document.querySelector('.js-collapsible-share');
 
-const arrowElement = document.querySelector('.js-hidden');
+const arrow3 = document.querySelector('.js-arrow3');
 
-function handleShow() {
-  arrow.classList.toggle('collapsable--close');
+function collapsibleArrowShare() {
+  collapsibleShare.classList.toggle('collapsible-hidden');
+  arrow3.classList.toggle('fa-chevron-up');
+  arrow3.classList.toggle('fa-chevron-down');
 }
 
-arrowElement.addEventListener('click', handleShow);
+arrow3.addEventListener('click', collapsibleArrowShare);
 
 // Twitter
 
