@@ -67,9 +67,6 @@
         margin-right: 9px;
       }
     }
-    .collapsible-hidden {
-      display: none;
-    }
   }
 
   &__result {
@@ -123,4 +120,7 @@
       }
     }
   }
+}
+.collapsible-hidden {
+  display: none;
 }

@@ -2,19 +2,20 @@
 
 // Collapsable
 
-const collapsibleShare = document.querySelector('.js-collapsible-share');
+const collapsibleShare = document.querySelector('.share__create');
 
-const arrow3 = document.querySelector('.js-arrow3');
+const share = document.querySelector('.share');
+const arrow = document.querySelector('.arrow');
 
 function collapsibleArrowShare() {
   collapsibleShare.classList.toggle('collapsible-hidden');
-  arrow3.classList.toggle('fa-chevron-up');
-  arrow3.classList.toggle('fa-chevron-down');
+  arrow.classList.toggle('fa-chevron-up');
+  arrow.classList.toggle('fa-chevron-down');
 }
 
-arrow3.addEventListener('click', collapsibleArrowShare);
+share.addEventListener('click', collapsibleArrowShare);
 
-// Twitter
+/* Twitter
 
 const twitterElement = document.querySelector('.js-twitter-btn');
 const twitterLinkElement = document.querySelector('.js-twitter-link');
@@ -22,4 +23,4 @@ const twitterLinkElement = document.querySelector('.js-twitter-link');
 function handleTwitterShare() {
   twitterLinkElement.href = `https://twitter.com/intent/tweet?text=Aquí%20tienes%20mi%20nueva%20tarjeta%20`;
 }
-twitterElement.addEventListener('click', handleTwitterShare);
+twitterElement.addEventListener('click', handleTwitterShare);*/
