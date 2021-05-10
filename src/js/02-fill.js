@@ -10,7 +10,7 @@ function changeName(ev) {
     const fillFullNameChange = ev.target;
     const fillFullNameValue = fillFullNameChange.value;
 
-    if(fillFullNameChange.name === 'full-name') {
+    if (fillFullNameChange.name === 'full-name') {
         photoFullName.innerHTML = fillFullNameValue;
     }
     console.log('target', ev.target);
