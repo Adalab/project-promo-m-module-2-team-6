@@ -69,10 +69,6 @@
     }
   }
 
-  .hidden {
-    display: none;
-  }
-
   &__result {
     display: flex;
     flex-direction: column;
@@ -124,4 +120,7 @@
       }
     }
   }
+}
+.collapsible-hidden {
+  display: none;
 }
