@@ -1,5 +1,4 @@
 'use strict';
-
 // Collapsable
 
 const collapsibleShare = document.querySelector('.share__create');
@@ -17,7 +16,7 @@ share.addEventListener('click', collapsibleArrowShare);
 
 /* Twitter
 
-const twitterElement = document.querySelector('.js-twitter-btn');
+const twitterElement = document.querySelector('.js-card-result');
 const twitterLinkElement = document.querySelector('.js-twitter-link');
 
 function handleTwitterShare() {
