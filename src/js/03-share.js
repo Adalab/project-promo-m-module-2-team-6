@@ -1,6 +1,6 @@
 'use strict';
 
-/*const collapsibleHeaders = document.querySelectorAll('.js-collapsible-header');
+const collapsibleHeaders = document.querySelectorAll('.js-collapsible-header');
 
 for (const collapsibleHeader of collapsibleHeaders) {
   collapsibleHeader.addEventListener('click', switchCollapsible);
@@ -10,20 +10,19 @@ function switchCollapsible(ev) {
   const clickedHeader = ev.currentTarget;
   const clickedCollapsible = clickedHeader.parentNode;
 
-  const allCollapsiblesCont = document.querySelectorAll(
-    '.js-collapsible-container');
+  const allCollapsibles = document.querySelectorAll(
+    '.js-collapsible');
 
-  for (const collapsible of allCollapsiblesCont) {
+  for (const collapsible of allCollapsibles) {
     if (clickedCollapsible === collapsible) {
       collapsible.classList.toggle('collapsible--close');
     } else {
       collapsible.classList.add('collapsible--close');
     }
   }
-}*/
+}
 
-
-const collapsibleShare = document.querySelector('.share__create');
+/*const collapsibleShare = document.querySelector('.share__create');
 
 const share = document.querySelector('.share');
 const arrow = document.querySelector('.arrow');
@@ -34,7 +33,7 @@ function collapsibleArrowShare() {
   arrow.classList.toggle('fa-chevron-down');
 }
 
-share.addEventListener('click', collapsibleArrowShare);
+share.addEventListener('click', collapsibleArrowShare);*/
 
 /* Twitter
 
