@@ -28,7 +28,7 @@
     <main class="main-cards">
       <div class="main-cards__container">
         <section class="section__photo">
-          <button class="section__photo--button">
+          <button class="section__photo--button js-photoReset">
             <i class="far fa-trash-alt icongarbage"></i>reset
           </button>
           <article class="section__photo--card">
@@ -46,26 +46,26 @@
             <nav class="section__photo--nav">
               <ul class="section__photo--list">
                 <li class="section__photo--link">
-                  <a class="section__photo--icon" href="" target="_blank"
+                  <a class="section__photo--icon js-photoPhone" href="" target="_blank"
                     ><i class="fas fa-mobile-alt"></i
                   ></a>
                 </li>
                 <li class="section__photo--link">
-                  <a class="section__photo--icon" href="" target="_blank"
+                  <a class="section__photo--icon js-photoEmail" href="" target="_blank"
                     ><i class="far fa-envelope"></i
                   ></a>
                 </li>
                 <li class="section__photo--link">
                   <a
-                    class="section__photo--icon"
-                    href="linkein.com/in/laura-garcía-bonet-11a46b11a"
+                    class="section__photo--icon js-photoLinkedin"
+                    href=""
                     target="_blank"
                     ><i class="fab fa-linkedin-in"></i
                   ></a>
                 </li>
                 <li class="section__photo--link">
                   <a
-                    class="section__photo--icon"
+                    class="section__photo--icon js-photoGithub"
                     href="https://github.com/Laura733"
                     target="_blank"
                     ><i class="fab fa-github-alt"></i
@@ -138,7 +138,7 @@
               <h2 class="formf__fill--title">rellena</h2>
             </div>
             <span class="formf__fill--arrow-up">
-              <i class="fas fa-angle-up"></i>
+              <i class="fa fa-chevron-up"></i>
             </span>
           </div>
           <form class="formf__box js-fillform" action="" method="POST">
@@ -167,47 +167,53 @@
             </div>
 
             <label for="">Email</label>
-            <input placeholder="Ej: sally-hill@gmail.com" type="email" name="" />
-
-            <label for="">Email</label>
-            <input placeholder="Ej: sally-hill@gmail.com" type="email" name="" />
+            <input placeholder="Ej: sally-hill@gmail.com" type="email" name="email" />
 
             <label for="">Teléfono</label>
-            <input class="" placeholder="Ej: 555-55-55-55" type="tel" />
+            <input class="" placeholder="Ej: 555-55-55-55" type="tel" name="phone" />
 
             <label for="">LinkedIn</label>
-            <input class="" placeholder="Ej: linkedon.com/in/sally.hill" type="text" />
+            <input
+              class=""
+              placeholder="Ej: linkedin.com/in/sally.hill"
+              type="text"
+              name="linkedin"
+            />
 
             <label for="">Github</label>
-            <input class="" placeholder="Ej: @sally-hill" type="text" />
+            <input class="" placeholder="Ej: @sally-hill" type="text" name="github" />
           </form>
         </section>
 
-        <section class="share__container js-collapsible-share ">
+        <section class="share__container">
           <div class="share">
-            <div class="share__header">
+            <div class="share__header js-collapsible-header">
               <i class="share__header--icon fas fa-share-alt" title="Comparte"></i>
-              <h2 class="share__header--title">Comparte</h2> 
+              <h2 class="share__header--title">Comparte</h2>
             </div>
-            <span class="js-arrow3 share__arrow">
+            <span class="share__arrow">
               <i class="fa fa-chevron-up arrow"></i>
             </span>
           </div>
 
-          <div class="share__create collapsible-hidden">
+          <div class="share__create collapsible--close">
             <button class="share__create--button js-create-btn">
               <i class="far fa-address-card" title="Crea"></i>Crear tarjeta
             </button>
           </div>
           
-          <div class="share__result collapsible-hidden js-card-result">
+          <div class="share__result collapsible--close js-card-result">
             <p class="share__result--title">La tarjeta ha sido creada:</p>
-            <a class="share__result--link" href="">https://awesome-profile-card.com?id=A456DF0001</a>
+            <a class="share__result--link" href=""
+              >https://awesome-profile-card.com?id=A456DF0001</a
+            >
             <button class="share__result--twitter js-twitter-link">
-              <i class="fa fa-twitter" title="Comparte en Twitter"></i>Compartir en Twitter
+              <i class="fa fa-twitter" title="Comparte en Twitter"></i>Compartir en
+              Twitter
             </button>
-          </div>  
+          </div>
         </section>
+
         <!-- /form -->
       </div>
     </main>
