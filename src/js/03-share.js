@@ -1,5 +1,27 @@
 'use strict';
-// Collapsable
+
+/*const collapsibleHeaders = document.querySelectorAll('.js-collapsible-header');
+
+for (const collapsibleHeader of collapsibleHeaders) {
+  collapsibleHeader.addEventListener('click', switchCollapsible);
+}
+
+function switchCollapsible(ev) {
+  const clickedHeader = ev.currentTarget;
+  const clickedCollapsible = clickedHeader.parentNode;
+
+  const allCollapsiblesCont = document.querySelectorAll(
+    '.js-collapsible-container');
+
+  for (const collapsible of allCollapsiblesCont) {
+    if (clickedCollapsible === collapsible) {
+      collapsible.classList.toggle('collapsible--close');
+    } else {
+      collapsible.classList.add('collapsible--close');
+    }
+  }
+}*/
+
 
 const collapsibleShare = document.querySelector('.share__create');
 
@@ -7,7 +29,7 @@ const share = document.querySelector('.share');
 const arrow = document.querySelector('.arrow');
 
 function collapsibleArrowShare() {
-  collapsibleShare.classList.toggle('collapsible-hidden');
+  collapsibleShare.classList.toggle('collapsible--close');
   arrow.classList.toggle('fa-chevron-up');
   arrow.classList.toggle('fa-chevron-down');
 }
