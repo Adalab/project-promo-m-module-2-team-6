@@ -1,6 +1,8 @@
 .formf {
   width: 100%;
-  height: 100%;
+  grid-column: 1/2;
+  grid-row: 1;
+  //height: 100%;
 
   &__fill {
     display: flex;

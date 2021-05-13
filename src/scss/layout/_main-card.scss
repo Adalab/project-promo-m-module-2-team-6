@@ -3,7 +3,7 @@
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     padding-block: 20px;
     padding-left: 20px;
     padding-right: 40px;
@@ -16,6 +16,6 @@
 
   .main-cards__form {
     grid-column: 1/2;
-    grid-row: 1/2;
+    grid-row: 1;
   }
 }
