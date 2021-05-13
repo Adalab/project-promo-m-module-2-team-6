@@ -7,15 +7,27 @@
     padding-block: 20px;
     padding-left: 20px;
     padding-right: 40px;
+    background-color: rgba(255, 255, 255, 100);
   }
 
   .section__photo {
     grid-column: 2/3;
     grid-row: span 3;
   }
-
-  .main-cards__form {
+  .section__design {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .formf {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  /*.main-cards__form {
     grid-column: 1/2;
     grid-row: 1;
+  }*/
+  .share__container {
+    grid-column: 1/2;
+    grid-row: 3/4;
   }
 }

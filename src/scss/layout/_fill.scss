@@ -1,7 +1,5 @@
 .formf {
   width: 100%;
-  grid-column: 1/2;
-  grid-row: 1;
   //height: 100%;
 
   &__fill {
@@ -14,6 +12,7 @@
       color: $color-icons;
       font-size: 18px;
       align-items: center;
+      padding-bottom: 10px;
 
       .fa-keyboard {
         margin-right: 10px;
@@ -29,8 +28,8 @@
 
     &--arrow-up {
       color: $color-secondary;
-      font-size: 22px;
-      padding-right: 30px;
+      font-size: 18px;
+      padding-right: 20px;
       padding-top: 5px;
     }
   }

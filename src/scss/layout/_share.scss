@@ -1,10 +1,8 @@
 .share__container {
-  padding: 20px;
+  padding: 10px 20px 10px 20px;
   display: flex;
   flex-direction: column;
   border-top: 1px solid #d8d8d8;
-  grid-column: 1/2;
-  grid-row: 1;
 }
 
 .share {
@@ -19,11 +17,12 @@
       height: 18px;
       color: $color-icons;
       font-size: 18px;
+      margin-right: 10px;
     }
     &--title {
       text-transform: uppercase;
       font-size: 18px;
-      color: #54585a;
+      color: $color-secondary;
       font-family: "Open Sans", sans-serif;
       font-weight: 600;
     }
@@ -34,7 +33,7 @@
     .fa-chevron-down {
       width: 21px;
       height: 18px;
-      color: #54585a;
+      color: $color-secondary;
       font-size: 18px;
     }
   }

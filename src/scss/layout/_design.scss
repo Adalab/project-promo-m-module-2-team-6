@@ -2,17 +2,19 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 4;
-  padding: 27px 20px 0 20px;
+  grid-template-rows: 4fr;
+  padding: 27px 20px 0px 20px;
   border-bottom: 1px solid $color-border;
-  grid-column: 1/2;
-  grid-row: 1;
+
+  @media all and (min-width: 768px) {
+    padding-top: 0px;
+  }
 }
 .section__design--contain {
   grid-column: span 3;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  padding-bottom: 10px;
 }
 .section__design--title {
   grid-column: span 3;
@@ -28,7 +30,7 @@
   margin-right: 10px;
 }
 .icon--angle {
-  font-size: 22px;
+  font-size: 18px;
   color: $color-secondary;
   padding-right: 10px;
 }
@@ -43,21 +45,22 @@ design<i class="far fa-object-ungroup"></i>
   font-size: 14px;
   color: $color-secondary;
   text-transform: uppercase;
-  margin-top: 22px;
+
   font-weight: lighter;
   margin-left: 19px;
-
+  margin-top: 10px;
   @media all and (min-width: 768px) {
     margin-left: 0px;
   }
+}
+.section__design--box {
+  grid-column: span 2;
+  padding-bottom: 30px;
 }
 .section__desing--boxcolor {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  grid-column: 2/3;
-  grid-row: 2;
-  padding-right: 10px;
   margin-top: 22px;
 }
 .section__design--check {
@@ -80,15 +83,6 @@ design<i class="far fa-object-ungroup"></i>
 .color1-3 {
   background-color: $color-palette-g3;
 }
-.section__desing--boxcolor2 {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  grid-column: 2/3;
-  grid-row: 3;
-  padding-right: 10px;
-  margin-top: 20px;
-}
 .color2-1 {
   background-color: $color-palette-r1;
 }
@@ -97,16 +91,6 @@ design<i class="far fa-object-ungroup"></i>
 }
 .color2-3 {
   background-color: $color-palette-r3;
-}
-.section__desing--boxcolor3 {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  grid-column: 2/3;
-  grid-row: 4;
-  padding-right: 10px;
-  margin-top: 20px;
-  margin-bottom: 30px;
 }
 .color3-1 {
   background-color: $color-palette-b1;

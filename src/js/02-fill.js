@@ -6,6 +6,7 @@ const photoJob = document.querySelector('.js-photoJob');
 const photoEmail = document.querySelector('.js-photoEmail');
 const photoLinkedin = document.querySelector('.js-photoLinkedin');
 const photoGitHub = document.querySelector('.js-photoGithub');
+const photoPhone = document.querySelector('.js-photoPhone') ;
 
 function onFormKeyUp(ev) {
   const element = ev.target;
@@ -24,7 +25,10 @@ function onFormKeyUp(ev) {
     photoLinkedin.href = value;
   }
   else if (element.name === 'github') {
-    photoGitHub.href = value;
+    photoGitHub.href = value; //Revisar
+  }
+  else {
+    photoPhone.href = value;
   }
 }
 
