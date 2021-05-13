@@ -3,6 +3,8 @@
   display: flex;
   flex-direction: column;
   border-top: 1px solid #d8d8d8;
+  grid-column: 1/2;
+  grid-row: 1;
 }
 
 .share {
