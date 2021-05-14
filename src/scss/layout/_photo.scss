@@ -6,6 +6,10 @@
   flex-direction: column;
   justify-content: center;
   border-radius: 5px;
+
+  @media all and(min-width: 768px) {
+    width: 40%;
+  }
 }
 .section__photo--button {
   width: 75px;
