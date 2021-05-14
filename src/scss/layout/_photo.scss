@@ -95,3 +95,27 @@
   font-size: 18px;
   color: $color-primary;
 }
+
+.section__photo.js-color-red {
+  .section__photo--boxnamejob {
+    border-left: #bd1010 5px solid;
+    &--name {
+      color: #420101;
+    }
+  }
+  .section__photo--link {
+    border-color: #e95626;
+  }
+}
+
+.section__photo.js-color-blue {
+  .section__photo--boxnamejob {
+    border-left: #eab052 5px solid;
+    &--name {
+      color: #3e5b65;
+    }
+  }
+  .section__photo--link {
+    border-color: #a0c0cf;
+  }
+}
