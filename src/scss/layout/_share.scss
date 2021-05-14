@@ -30,11 +30,11 @@
 
   &__arrow {
     cursor: pointer;
+    color: $color-secondary;
+    font-size: 18px;
     .fa-chevron-down {
       width: 21px;
       height: 18px;
-      color: $color-secondary;
-      font-size: 18px;
     }
   }
 
