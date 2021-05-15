@@ -27,14 +27,28 @@
         name="job"
       />
 
-      <label for="">Imagen de perfil</label>
+      <div class="formf__box--label">Imagen de perfil</div>
       <div class="formf__box--container">
-        <input class="formf__box--button" type="submit" value="Añadir imagen" />
-        <input class="formf__box--previewimg" type="image" src="" alt="" />
+        <!--aqui va foto clase ivan-->
+        <label class="formf__box--button" for="img-selector"
+          >Añadir imagen</label
+        >
+        <input
+          id="img-selector"
+          class="js__profile-upload-btn formf__box--inputFile"
+          type="file"
+        /><!---file carga la imagen-->
+
+        <div
+          class="formf__box--previewimg js__profile-preview"
+          type="image"
+          src=""
+          alt=""
+        ></div>
         <!--provisional-->
       </div>
 
-      <label for="">Email</label>
+      <label for="email">Email</label>
       <input placeholder="Ej: sally-hill@gmail.com" type="email" name="email" />
 
       <label for="">Teléfono</label>
