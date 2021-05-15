@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   border-radius: 5px;
 
   @media all and(min-width: 768px) {
@@ -22,13 +23,13 @@
   border: 1px solid $color-background-cards;
   background-color: rgba(221, 233, 237, 100);
   margin-bottom: 20px;
+  transform: translate(-162px);
 
   @media all and (min-width: 768px) {
-    margin-left: 25px;
+    transform: translate(-82px);
   }
 
   @media all and (min-width: 1200px) {
-    margin-left: 173px;
   }
 }
 .icongarbage {
@@ -40,15 +41,16 @@
   background-color: $color-background-cards;
   padding-top: 21px;
   border-radius: 3px;
+  width: 400px;
 
   @media all and (min-width: 768px) {
     margin-left: 25px;
     margin-right: 24px;
+    height: 380px;
+    width: 240px;
   }
 
   @media all and (min-width: 1200px) {
-    margin-left: 173px;
-    margin-right: 172px;
   }
 }
 .section__photo--boxnamejob {
