@@ -8,10 +8,12 @@
 .share {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
   &__header {
     display: flex;
     flex-direction: row;
     align-items: center;
+
     &--icon {
       width: 21px;
       height: 18px;
@@ -29,7 +31,6 @@
   }
 
   &__arrow {
-    cursor: pointer;
     color: $color-secondary;
     font-size: 18px;
     .fa-chevron-down {

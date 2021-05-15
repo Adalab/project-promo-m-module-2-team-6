@@ -1,4 +1,5 @@
 .section__design {
+  cursor: pointer;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -19,7 +20,6 @@
 .section__design--title {
   grid-column: span 3;
   grid-row: 1;
-  font-family: $font-primary;
   font-size: 18px;
   color: $color-secondary;
   text-transform: uppercase;
