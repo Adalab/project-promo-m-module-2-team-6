@@ -37,12 +37,13 @@
               <h4 class="section__photo--job js-photoJob">Front-end developer</h4>
             </div>
             <div class="section__photo--img">
-              <img
-                class="section__photo--image"
-                src="https://placekitten.com/200/200"
+              <div
+                class="section__photo--image js__profile-image"
+                style="background-image: url(https://placekitten.com/200/200)"
                 alt="photograph"
-              />
+              ></div>
             </div>
+
             <nav class="section__photo--nav">
               <ul class="section__photo--list">
                 <li class="section__photo--link">
@@ -163,14 +164,28 @@
                   name="job"
                 />
 
-                <label for="">Imagen de perfil</label>
+                <div class="formf__box--label">Imagen de perfil</div>
                 <div class="formf__box--container">
-                  <input class="formf__box--button" type="submit" value="Añadir imagen" />
-                  <input class="formf__box--previewimg" type="image" src="" alt="" />
+                  <!--aqui va foto clase ivan-->
+                  <label class="formf__box--button" for="img-selector"
+                    >Añadir imagen</label
+                  >
+                  <input
+                    id="img-selector"
+                    class="js__profile-upload-btn formf__box--inputFile"
+                    type="file"
+                  /><!---file carga la imagen-->
+
+                  <div
+                    class="formf__box--previewimg js__profile-preview"
+                    type="image"
+                    src=""
+                    alt=""
+                  ></div>
                   <!--provisional-->
                 </div>
 
-                <label for="">Email</label>
+                <label for="email">Email</label>
                 <input placeholder="Ej: sally-hill@gmail.com" type="email" name="email" />
 
                 <label for="">Teléfono</label>
