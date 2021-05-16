@@ -32,8 +32,10 @@
             <i class="far fa-trash-alt icongarbage"></i>reset
           </button>
           <article class="section__photo--card">
-            <div class="section__photo--boxnamejob">
-              <h3 class="section__photo--name js-photoFullName">nombre apellido</h3>
+            <div class="section__photo--boxnamejob border-palette-g2">
+              <h3 class="section__photo--name js-photoFullName color-pallete-g1">
+                nombre apellido
+              </h3>
               <h4 class="section__photo--job js-photoJob">Front-end developer</h4>
             </div>
             <div class="section__photo--img">
@@ -46,17 +48,17 @@
 
             <nav class="section__photo--nav">
               <ul class="section__photo--list">
-                <li class="section__photo--link">
+                <li class="section__photo--link border-palette-g3">
                   <a class="section__photo--icon js-photoPhone" href="" target="_blank"
                     ><i class="fas fa-mobile-alt"></i
                   ></a>
                 </li>
-                <li class="section__photo--link">
+                <li class="section__photo--link border-palette-g3">
                   <a class="section__photo--icon js-photoEmail" href="" target="_blank"
                     ><i class="far fa-envelope"></i
                   ></a>
                 </li>
-                <li class="section__photo--link">
+                <li class="section__photo--link border-palette-g3">
                   <a
                     class="section__photo--icon js-photoLinkedin"
                     href=""
@@ -64,7 +66,7 @@
                     ><i class="fab fa-linkedin-in"></i
                   ></a>
                 </li>
-                <li class="section__photo--link">
+                <li class="section__photo--link border-palette-g3">
                   <a
                     class="section__photo--icon js-photoGithub"
                     href="https://github.com/Laura733"
@@ -92,11 +94,11 @@
                 <h3 class="section__design--subtitle">Colores</h3>
                 <label class="section__desing--boxcolor" for="colorpalette1">
                   <input
-                    class="section__design--check js-colorPallete1"
-                    id="colorpalette1"
+                    class="section__design--check js-colorPalette1"
                     type="radio"
-                    value="green"
+                    value="g"
                     name="design-color"
+                    checked
                   />
                   <ul class="section__design--palette">
                     <li class="box color1-1"></li>
@@ -106,10 +108,9 @@
                 </label>
                 <label class="section__desing--boxcolor" for="colorpalette2">
                   <input
-                    class="section__design--check js-colorPallete1"
-                    id="colorpalette2"
+                    class="section__design--check js-colorPalette2"
                     type="radio"
-                    value="red"
+                    value="r"
                     name="design-color"
                   />
                   <ul class="section__design--palette">
@@ -120,10 +121,9 @@
                 </label>
                 <label class="section__desing--boxcolor" for="colorpalette3">
                   <input
-                    class="section__design--check"
-                    id="colorpalette3"
+                    class="section__design--check js-colorPalette3"
                     type="radio"
-                    value="blue"
+                    value="b"
                     name="design-color"
                   />
                   <ul class="section__design--palette">
@@ -152,7 +152,7 @@
                     class="name js-fullName"
                     placeholder="Ej: Sally Hill"
                     type="text"
-                    name="full-name"
+                    name="name"
                   />
 
                   <label for="">Puesto</label>

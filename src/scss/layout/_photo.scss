@@ -54,17 +54,18 @@
   }
 }
 .section__photo--boxnamejob {
-  border-left: 5px solid $color-palette-g2;
+  border-left: 5px solid;
   padding: 0px 20px 0px 14px;
   margin-bottom: 10px;
 }
+
 .section__photo--name {
   font-family: $font-cards;
   font-size: 18px;
-  color: $color-primary;
   text-transform: capitalize;
   padding-bottom: 4px;
 }
+
 .section__photo--job {
   font-family: $font-cards;
   font-size: 16px;
@@ -92,7 +93,7 @@
   width: 32px;
   height: 32px;
   font-size: 18px;
-  border: 1px solid $color-palette-g3;
+  border: 1px solid;
   border-radius: 20px;
   margin-right: 10px;
   padding-top: 2px;
