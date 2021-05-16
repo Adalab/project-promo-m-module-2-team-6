@@ -16,6 +16,7 @@ const formElement = {
   phone:'',
   github:''
 };
+
 function newFormElements(ev) {
   const element = ev.target;
   const value = element.value;
