@@ -1,14 +1,19 @@
+.sectionForm {
+  padding: 30px 20px 30px 20px;
+}
+
 .formf {
   width: 100%;
+  border-bottom: 1px solid #d8d8d8;
 
   &__fill {
     cursor: pointer;
     display: flex;
     justify-content: space-between;
+
     &--icon {
       display: flex;
       margin-top: 10px;
-      margin-left: 20px;
       color: $color-icons;
       font-size: 18px;
       align-items: center;
@@ -28,7 +33,6 @@
     &--arrow-up {
       color: $color-secondary;
       font-size: 18px;
-      padding-right: 20px;
       padding-top: 10px;
     }
   }
@@ -36,7 +40,8 @@
   &__box {
     display: flex;
     flex-direction: column;
-    padding: 25px 19px 30px 20px;
+    padding-top: 25px;
+    padding-bottom: 10px;
     font-size: 14px;
 
     &--label {

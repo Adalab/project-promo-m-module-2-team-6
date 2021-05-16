@@ -5,11 +5,14 @@
   align-items: center;
   border-top: 1px solid $color-footer-border;
   background-color: white;
+  padding-bottom: 10px;
+  height: 150px;
 
   @media all and (min-width: 768px) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 60px;
   }
 
   &__copy {
