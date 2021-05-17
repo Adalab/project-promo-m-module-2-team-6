@@ -1,20 +1,21 @@
-'use strict';
+"use strict";
 
-const fillForm = document.querySelector('.js-fillform');
-const photoFullName = document.querySelector('.js-photoFullName');
-const photoJob = document.querySelector('.js-photoJob');
-const photoEmail = document.querySelector('.js-photoEmail');
-const photoLinkedin = document.querySelector('.js-photoLinkedin');
-const photoGitHub = document.querySelector('.js-photoGithub');
-const photoPhone = document.querySelector('.js-photoPhone') ;
+const fillForm = document.querySelector(".js-fillform");
+const photoFullName = document.querySelector(".js-photoFullName");
+const photoJob = document.querySelector(".js-photoJob");
+const photoEmail = document.querySelector(".js-photoEmail");
+const photoLinkedin = document.querySelector(".js-photoLinkedin");
+const photoGitHub = document.querySelector(".js-photoGithub");
+const photoPhone = document.querySelector(".js-photoPhone");
 
 const formElement = {
-  name:'',
-  job:'',
-  email: '',
-  linkedin:'',
-  phone:'',
-  github:''
+  name: "",
+  job: "",
+  email: "",
+  linkedin: "",
+  phone: "",
+  github: "",
+  photo: "",
 };
 function newFormElements(ev) {
   const element = ev.target;
@@ -54,9 +55,9 @@ function newPhotoElements() {
     photoPhone.href = value;
   }*/
 
-function onFormKeyUp(){
+function onFormKeyUp() {
   newFormElements();
   newPhotoElements();
 }
 
-fillForm.addEventListener('keyup', onFormKeyUp);
+fillForm.addEventListener("keyup", onFormKeyUp);
