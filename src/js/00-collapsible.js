@@ -11,8 +11,7 @@ for (const collapsibleHeader of collapsibleHeaders) {
 function switchCollapsible(ev) {
   const clickedHeader = ev.currentTarget;
 
-  const allCollapsibles = document.querySelectorAll(
-    '.js-collapsible');
+  const allCollapsibles = document.querySelectorAll('.js-collapsible');
   for (let i=0; i< allCollapsibles.length; i++) {
     if(clickedHeader === collapsibleHeaders[i]) {
       arrow[i].classList.toggle('fa-chevron-up');

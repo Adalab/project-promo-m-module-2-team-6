@@ -1,9 +1,9 @@
-/*"use strict";
+/*'use strict';
 
-const resetElement = document.querySelector(".js-reset");
+const resetElement = document.querySelector('.js-reset');
 
 function handleReset() {
   localStorage.clear();
 }
 
-resetElement.addEventListener("click", handleReset);*/
+resetElement.addEventListener('click', handleReset);*/
