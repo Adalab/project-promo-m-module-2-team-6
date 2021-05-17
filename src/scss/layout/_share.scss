@@ -1,8 +1,8 @@
 .share__container {
-  padding: 10px 20px 10px 20px;
+  padding-block: 10px;
   display: flex;
   flex-direction: column;
-  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid $color-footer-border;
 }
 
 .share {
@@ -76,7 +76,6 @@
     flex-direction: column;
     align-items: center;
     border-top: 1px solid #d8d8d8;
-    border-bottom: 1px solid #d8d8d8;
     &--title {
       margin: 20px 0 5px 0;
       font-family: $font-primary;

@@ -24,6 +24,7 @@
       width: 419px;
       height: 105px;
       margin-bottom: 31px;
+      margin-top: 350px;
     }
   }
 
@@ -67,8 +68,7 @@
     justify-content: space-between;
     align-items: center;
     font-size: 12px;
-    padding: 15px 20px;
-    margin-bottom: 5px;
+    padding: 15px 10px 15px 15px;
 
     @media all and (min-width: 768px) {
       width: 325px;
@@ -109,10 +109,11 @@
     border-radius: 21px solid $color-primary;
     background-color: $color-button;
     margin-top: 40px;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 
     @media all and (min-width: 768px) {
       margin-top: 186px;
+      margin-bottom: 59px;
     }
   }
 }

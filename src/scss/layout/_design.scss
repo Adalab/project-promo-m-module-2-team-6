@@ -4,8 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 4fr;
-  padding: 27px 20px 0px 20px;
-  border-bottom: 1px solid $color-border;
+  border-bottom: 1px solid $color-footer-border;
 
   @media all and (min-width: 768px) {
     padding-top: 0px;

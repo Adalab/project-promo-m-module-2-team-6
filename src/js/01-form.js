@@ -17,6 +17,7 @@ const formElement = {
   github: "",
   photo: "",
 };
+
 function newFormElements(ev) {
   const element = ev.target;
   const value = element.value;
@@ -60,4 +61,8 @@ function onFormKeyUp() {
   newPhotoElements();
 }
 
+<<<<<<< HEAD:src/js/03_fill.js
 fillForm.addEventListener("keyup", onFormKeyUp);
+=======
+fillForm.addEventListener('keyup', onFormKeyUp);
+>>>>>>> 57f267aeb09d4e5d90147e43e4515136b5f4f891:src/js/01-form.js
