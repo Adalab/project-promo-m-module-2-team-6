@@ -17,11 +17,10 @@ function switchCollapsible(ev) {
     if(clickedHeader === collapsibleHeaders[i]) {
       arrow[i].classList.toggle('fa-chevron-up');
       collapsibleBox[i].classList.toggle('collapsible--close');
-    }else { 
+    }else {
       collapsibleBox[i].classList.add('collapsible--close');
       arrow[i].classList.remove('fa-chevron-up');
       arrow[i].classList.add('fa-chevron-down');
-      console.log(arrow[i]);
     }
   }
 }
