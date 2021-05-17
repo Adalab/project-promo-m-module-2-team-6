@@ -10,6 +10,7 @@
 
   @media all and(min-width: 768px) {
     width: 70%;
+    //height: ;
   }
 }
 .section__photo--button {
@@ -23,7 +24,7 @@
   border: 1px solid $color-background-cards;
   background-color: rgba(221, 233, 237, 100);
   margin-bottom: 20px;
-  transform: translate(-162px);
+  transform: translate(-80px);
 
   @media all and (min-width: 768px) {
     transform: translate(-82px);
@@ -41,7 +42,7 @@
   background-color: $color-background-cards;
   padding-top: 21px;
   border-radius: 3px;
-  width: 400px;
+  //width: 400px;
 
   @media all and (min-width: 768px) {
     margin-left: 25px;

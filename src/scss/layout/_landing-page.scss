@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .main {
   color: $color-icons;
   display: flex;
@@ -6,10 +11,9 @@
   text-align: center;
   justify-content: center;
   background-color: $color-background-landing;
-
+  padding-top: 100px;
   &__img {
     width: 15.62rem;
-    margin-top: 95px;
     margin-bottom: 35px;
 
     @media all and (min-width: 1220px) {
@@ -18,7 +22,7 @@
 
     @media all and (min-width: 768px) {
       width: 419px;
-      //height: 105px;
+      height: 105px;
       margin-bottom: 31px;
       margin-top: 350px;
     }
@@ -28,7 +32,7 @@
     font-family: $font-title;
     font-size: 19.2px;
     width: 270px;
-    //height: 24px;
+    height: 24px;
     line-height: 19.2px;
 
     @media all and (min-width: 768px) {
