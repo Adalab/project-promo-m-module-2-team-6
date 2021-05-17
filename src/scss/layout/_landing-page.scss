@@ -11,7 +11,7 @@
   text-align: center;
   justify-content: center;
   background-color: $color-background-landing;
-  padding-top: 100px;
+
   &__img {
     width: 15.62rem;
     margin-bottom: 35px;
@@ -24,7 +24,6 @@
       width: 419px;
       height: 105px;
       margin-bottom: 31px;
-      margin-top: 350px;
     }
   }
 
@@ -108,7 +107,7 @@
     line-height: 42px;
     border-radius: 21px solid $color-primary;
     background-color: $color-button;
-    margin-top: 40px;
+
     margin-bottom: 30px;
 
     @media all and (min-width: 768px) {

@@ -1,10 +1,10 @@
-"use strict";
+'use strict';
 
 // Todo este código es común a las dos soluciones.
 
 // photoFullName ya esta definido en otro script.
-const boxNameJob = document.querySelector(".section__photo--boxnamejob");
-const photoLinks = document.querySelectorAll(".section__photo--link");
+const boxNameJob = document.querySelector('.section__photo-boxnamejob');
+const photoLinks = document.querySelectorAll('.section__photo--link');
 
 /* Quita los estilos relacionados con las paletas de colores
    a todos los elementos: nombre, trabajo y los links de abajo de la tarjeta.
@@ -23,41 +23,41 @@ const photoLinks = document.querySelectorAll(".section__photo--link");
 function resetPalette() {
   console.log(photoFullName.classList);
   photoFullName.classList.remove(
-    "color-palette-g1",
-    "color-palette-b1",
-    "color-palette-r1"
+    'color-palette-g1',
+    'color-palette-b1',
+    'color-palette-r1'
   );
 
   boxNameJob.classList.remove(
-    "border-palette-g2",
-    "border-palette-r2",
-    "border-palette-b2"
+    'border-palette-r2',
+    'border-palette-g2',
+    'border-palette-b2'
   );
 
   for (const p of photoLinks) {
     p.classList.remove(
-      "border-palette-g3",
-      "border-palette-r3",
-      "border-palette-b3"
+      'border-palette-g3',
+      'border-palette-r3',
+      'border-palette-b3'
     );
   }
 }
 
 // solucion 1: nos suscribimos al evento change del formulario
 // escribimos menos codigo pero es mas dificil de entender
-const form = document.querySelector(".main-cards__form");
-form.addEventListener("change", onFormChange);
+const form = document.querySelector('.main-cards__form');
+form.addEventListener('change', onFormChange);
 
 function onFormChange(event) {
   // solo atendemos los eventos que vienen de los input radio de las
   // paletas de colores
-  console.log("* event.target ->", event.target);
-  if (event.target.name == "design-color") {
+  console.log('* event.target ->', event.target);
+  if (event.target.name == 'design-color') {
     resetPalette();
 
     // obtenemos el valor del input radio que puede ser "g", "r" y "b"
     const paletteValue = event.target.value;
-    console.log("* paletteValue ->", paletteValue);
+    console.log('* paletteValue ->', paletteValue);
 
     // añadimos las clases en funcion del radio button que se haya seleccionado
     photoFullName.classList.add(`color-palette-${paletteValue}1`);
