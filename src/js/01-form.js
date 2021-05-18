@@ -15,11 +15,11 @@ const formElement = {
   linkedin: "",
   phone: "",
   github: "",
-  //photo: "",
+  photo: "",
 };
 
 function newFormElements(ev) {
-  const element = ev.target;
+  const element = ev.currentTarget;
   const value = element.value;
   formElement[element] = value;
 }

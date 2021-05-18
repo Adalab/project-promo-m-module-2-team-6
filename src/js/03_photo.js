@@ -17,6 +17,7 @@ function writeImage() {
   //data.photo = fr.result;
 }
 
+// eslint-disable-next-line no-unused-vars
 function fakeFileClick() {
   fileField.click();
 }
