@@ -1,6 +1,6 @@
 "use strict";
 
-const collapsibleHeaders = document.querySelectorAll(".js-collapsible-header");
+const collapsibleHeaders = document.querySelectorAll("js-collapsible-header");
 const collapsibleBox = document.querySelectorAll(".js-collapsible");
 //array de las flechas
 const arrow = document.querySelectorAll(".js-arrow");
@@ -20,7 +20,6 @@ function switchCollapsible(ev) {
       collapsibleBox[i].classList.add("collapsible--close");
       arrow[i].classList.remove("fa-chevron-up");
       arrow[i].classList.add("fa-chevron-down");
-      console.log(arrow[i]);
     }
   }
 }

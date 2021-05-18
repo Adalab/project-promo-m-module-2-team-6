@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable no-undef */
 "use strict";
 
 // Todo este código es común a las dos soluciones.
@@ -13,11 +15,10 @@ const photoLinks = document.querySelectorAll(".section__photo--link");
    tiene asignado elemento. Por ejemplo:
       <div id="elemento" classNames="clase1 clase2"></div>
       document.getElementById("elemento").classList -> [clase1, clase2]
-      
-      document.getElementById("elemento").classList.add("clase3") -> 
+      document.getElementById("elemento").classList.add("clase3") ->
                               <div id="elemento" classNames="clase1 clase2 clase3"></div>
 
-      document.getElementById("elemento").classList.remove("clase2") -> 
+      document.getElementById("elemento").classList.remove("clase2") ->
                               <div id="elemento" classNames="clase1 clase3"></div>
 */
 function resetPalette() {
@@ -29,8 +30,8 @@ function resetPalette() {
   );
 
   boxNameJob.classList.remove(
-    "border-palette-g2",
     "border-palette-r2",
+    "border-palette-g2",
     "border-palette-b2"
   );
 
@@ -52,7 +53,7 @@ function onFormChange(event) {
   // solo atendemos los eventos que vienen de los input radio de las
   // paletas de colores
   console.log("* event.target ->", event.target);
-  if (event.target.name == "design-color") {
+  if (event.target.name === "design-color") {
     resetPalette();
 
     // obtenemos el valor del input radio que puede ser "g", "r" y "b"
