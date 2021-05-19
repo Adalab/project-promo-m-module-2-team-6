@@ -1,9 +1,20 @@
-/*'use strict';
+"use strict";
 
-const resetElement = document.querySelector('.js-reset');
-
-function handleReset() {
-  localStorage.clear();
+function onResetClickForm() {
+  form.reset();
+  formElement = {
+    name: "Nombre Apellido",
+    job: "Front-end developer",
+    email: "",
+    linkedin: "",
+    phone: "",
+    github: "",
+    photo: "https://placekitten.com/200/200",
+  };
+  writeImage(formElement.photo);
+  newPhotoElements();
+  resetPalette();
 }
 
-resetElement.addEventListener('click', handleReset);*/
+const buttonReset = document.querySelector(".js-photoReset");
+buttonReset.addEventListener("click", onResetClickForm);
