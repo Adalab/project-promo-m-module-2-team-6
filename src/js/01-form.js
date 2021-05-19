@@ -20,22 +20,6 @@ let formElement = [
   },
 ];
 
-/*function newFormElements() {
-  for (const elements of formElement) {
-    if()
-}
-  newPhotoElements();
-}
-
-function newPhotoElements() {
-  photoFullName.innerText = formElement.name;
-  photoJob.innerText = formElement.job;
-  photoEmail.href = formElement.email;
-  photoLinkedin.href = formElement.linkedin;
-  photoGitHub.href = formElement.github;
-  photoPhone.href = formElement.phone;
-}*/
-
 function onFormKeyUp(ev) {
   const element = ev.target;
   console.log(element);
