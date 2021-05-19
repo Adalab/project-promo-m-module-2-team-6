@@ -7,7 +7,6 @@ const formSubmit = document.querySelector(".js-submit");
 
 function handleCreateBtn(ev) {
   ev.preventDefault();
-
   fetchAPI();
 
   shareHidden.classList.remove("js-share-hidden");
@@ -15,10 +14,11 @@ function handleCreateBtn(ev) {
   createBtn.disabled = true;
   twitterHiddenElement.classList.remove("hidden-share");
 }
-
+// Al hacer clic en el botón de "Enviar" enviaremos el formulario (submit) a un API que devolverá la URL de una web con la tarjeta de visita con la información rellena.
 createBtn.addEventListener("click", handleCreateBtn);
 formSubmit.addEventListener("submit", handleCreateBtn);
 
+// Función para enviar los datos al servidor para obtener la URL para compartir.
 function fetchAPI() {
   const url = "https://profileawesome.herokuapp.com/card";
   const data = getUserData();
@@ -42,3 +42,13 @@ function fetchAPI() {
       }
     });
 }
+
+// Añadir la funcionalidad de compartir en Twitter. Mostraremos esta URL para que el usuario verifique si la tarjeta está bien definida y un botón de "Compartir" que enlazará a Twitter donde habrá un tweet con texto predefinido que incluye la URL de la tarjeta.
+
+const twitterElement = document.querySelector(".js-twitter-btn");
+const twitterLinkElement = document.querySelector(".js-twitter-link");
+
+function handleTwitterShare() {
+  twitterLinkElement.href = `https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw&url=${shareLink}`;
+}
+twitterElement.addEventListener("click", handleTwitterShare);
