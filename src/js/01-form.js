@@ -8,24 +8,15 @@ const photoLinkedin = document.querySelector(".js-photoLinkedin");
 const photoGitHub = document.querySelector(".js-photoGithub");
 const photoPhone = document.querySelector(".js-photoPhone");
 
-let formElement = [
-  {
-    name: "",
-    job: "",
-    email: "",
-    linkedin: "",
-    phone: "",
-    github: "",
-    photo: "",
-  },
-];
-
-/*function newFormElements() {
-  for (const elements of formElement) {
-    if()
-}
-  newPhotoElements();
-}
+let formElement = {
+  name: "",
+  job: "",
+  email: "",
+  linkedin: "",
+  phone: "",
+  github: "",
+  photo: "",
+};
 
 function newPhotoElements() {
   photoFullName.innerText = formElement.name;
@@ -34,34 +25,18 @@ function newPhotoElements() {
   photoLinkedin.href = formElement.linkedin;
   photoGitHub.href = formElement.github;
   photoPhone.href = formElement.phone;
-}*/
+}
 
 function onFormKeyUp(ev) {
   const element = ev.target;
   console.log(element);
   formElement[ev.target.name] = ev.target.value;
-  console.log(formElement);
-  /*for (const user of formElement) {
-    const value = element.value;
-
-    if (element.name === "fullName") {
-      photoFullName.innerText = value;
-    } else if (element.name === "job") {
-      photoJob.innerText = value;
-    } else if (element.name === "email") {
-      photoEmail.href = value;
-    } else if (element.name === "linkedin") {
-      photoLinkedin.href = value;
-    } else if (element.name === "github") {
-      photoGitHub.href = value; //Revisar
-    } else {
-      photoPhone.href = value;
-    }
-  }*/
+  // console.log(formElement);
 }
-/*function onFormKeyUp() {
-  newFormElements();
+function handlerFormKeyUp(ev) {
+  onFormKeyUp(ev);
+  console.log(formElement);
   newPhotoElements();
-}*/
+}
 
-fillForm.addEventListener("keyup", onFormKeyUp);
+fillForm.addEventListener("keyup", handlerFormKeyUp);
