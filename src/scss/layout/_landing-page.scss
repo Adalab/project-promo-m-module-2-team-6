@@ -15,11 +15,7 @@
   &__img {
     width: 15.62rem;
     margin-bottom: 35px;
-    margin-top: 80px;
-
-    @media all and (min-width: 1220px) {
-      //padding-top: 50px;
-    }
+    margin-top: 50px;
 
     @media all and (min-width: 768px) {
       width: 419px;
@@ -69,7 +65,7 @@
     align-items: center;
     font-size: 12px;
     padding: 15px 10px 15px 15px;
-    margin-bottom: 38.6px;
+    //margin-bottom: 38.6px;
 
     @media all and (min-width: 768px) {
       width: 325px;
@@ -110,11 +106,11 @@
     border-radius: 21px solid $color-primary;
     background-color: $color-button;
 
-    margin-bottom: 30px;
+    //margin-bottom: 30px;
 
     @media all and (min-width: 768px) {
-      margin-top: 147.4px;
-      margin-bottom: 59px;
+      margin-top: 70px;
+      margin-bottom: 60px;
     }
   }
 }
