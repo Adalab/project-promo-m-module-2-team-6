@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -5,14 +12,13 @@
   align-items: center;
   border-top: 1px solid $color-footer-border;
   background-color: white;
-  padding-bottom: 10px;
-  height: 150px;
+  padding: 18px 20px;
 
   @media all and (min-width: 768px) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 60px;
+    height: 61px;
   }
 
   &__copy {
@@ -20,7 +26,7 @@
     color: $color-footer-text;
     font-size: 14px;
     opacity: 0.5;
-    padding-top: 18px;
+    padding-top: 13px;
 
     @media all and (min-width: 768px) {
       font-size: 14px;
@@ -31,7 +37,7 @@
   &__image {
     width: 103px;
     height: 50px;
-    padding-top: 12px;
+    padding-top: 11px;
 
     @media all and (min-width: 768px) {
       margin-right: 40px;
