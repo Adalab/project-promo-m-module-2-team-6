@@ -1,5 +1,10 @@
 "use strict";
 
+const createBtn = document.querySelector(".js-create-btn");
+const cardResult = document.querySelector(".js-card-link");
+const shareHidden = document.querySelector(".js-share-hidden");
+const formSubmit = document.querySelector(".js-submit");
+
 function handleCreateBtn(ev) {
   ev.preventDefault();
 
