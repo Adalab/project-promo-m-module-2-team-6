@@ -9,8 +9,8 @@
   border-radius: 5px;
 
   @media all and(min-width: 768px) {
-    width: 70%;
-    //height: ;
+    width: 50%;
+    height: 812px;
   }
 }
 .section__photo--button {
@@ -29,9 +29,6 @@
   @media all and (min-width: 768px) {
     transform: translate(-82px);
   }
-
-  @media all and (min-width: 1200px) {
-  }
 }
 .icongarbage {
   font-size: 12px;
@@ -42,12 +39,13 @@
   background-color: $color-background-cards;
   padding-top: 21px;
   border-radius: 3px;
-  //width: 400px;
+  width: 240px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
 
   @media all and (min-width: 768px) {
     margin-left: 25px;
     margin-right: 24px;
-    width: 240px;
+    margin-bottom: 220px;
   }
 
   @media all and (min-width: 1200px) {
@@ -94,7 +92,7 @@
   width: 32px;
   height: 32px;
   font-size: 18px;
-  border: 1px solid;
+  border: 2px solid;
   border-radius: 20px;
   margin-right: 10px;
   padding-top: 2px;

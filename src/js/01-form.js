@@ -9,13 +9,14 @@ const photoGitHub = document.querySelector(".js-photoGithub");
 const photoPhone = document.querySelector(".js-photoPhone");
 
 let formElement = {
-  name: "",
-  job: "",
+  palette: "1",
+  name: "Nombre Apellido",
+  job: "Front-end developer",
+  photo: "https://placekitten.com/200/200",
   email: "",
   linkedin: "",
   phone: "",
   github: "",
-  photo: "",
 };
 
 function newPhotoElements() {
@@ -29,10 +30,10 @@ function newPhotoElements() {
 
 function onFormKeyUp(ev) {
   const element = ev.target;
-  console.log(element);
-  formElement[ev.target.name] = ev.target.value;
-  // console.log(formElement);
+  formElement[element.name] = element.value;
+  saveInLocalStorage();
 }
+
 function handlerFormKeyUp(ev) {
   onFormKeyUp(ev);
   console.log(formElement);
@@ -40,3 +41,12 @@ function handlerFormKeyUp(ev) {
 }
 
 fillForm.addEventListener("keyup", handlerFormKeyUp);
+
+function updateAllInputs(userData) {
+  document.querySelector(".js-fullName").value = userData.name;
+  document.querySelector(".js-fillJob").value = userData.job;
+  document.querySelector(".js-input-email").value = userData.email;
+  document.querySelector(".js-input-phone").value = userData.phone;
+  document.querySelector(".js-input-linkedin").value = userData.linkedin;
+  document.querySelector(".js-input-github").value = userData.github;
+}
