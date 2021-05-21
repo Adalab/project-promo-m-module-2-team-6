@@ -57,7 +57,7 @@ function onFormChange(event) {
 
     // obtenemos el valor del input radio que puede ser "g", "r" y "b"
     const paletteValue = event.target.value;
-    console.log("* paletteValue ->", paletteValue);
+    console.log(paletteValue);
 
     if (paletteValue === "g") {
       formElement.palette = "1";
