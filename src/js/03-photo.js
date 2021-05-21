@@ -12,9 +12,9 @@ function getImage(e) {
 }
 
 function writeImage(url) {
-  profileImage.style.backgroundImage = `url(${url})`;
-  profilePreview.style.backgroundImage = `url(${url})`;
+  updatePhoto(url);
   formElement.photo = url;
+  saveInLocalStorage();
 }
 
 function fakeFileClick() {
@@ -22,3 +22,8 @@ function fakeFileClick() {
 }
 
 fileField.addEventListener("change", getImage);
+
+function updatePhoto(photo) {
+  profileImage.style.backgroundImage = `url(${photo})`;
+  profilePreview.style.backgroundImage = `url(${photo})`;
+}
