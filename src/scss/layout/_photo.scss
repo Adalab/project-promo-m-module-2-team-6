@@ -11,6 +11,10 @@
   @media all and(min-width: 768px) {
     width: 50%;
     height: 812px;
+    margin-right: 40px;
+  }
+  @media all and (min-width: 1000px) {
+    width: 600px;
   }
 }
 .section__photo--button {
