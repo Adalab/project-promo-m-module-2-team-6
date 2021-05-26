@@ -1,7 +1,10 @@
 .section__photo {
   width: 100%;
-  background-color: rgba(221, 233, 237, 100);
-  //background-image: ;
+  // background-image: url(../images/photo-background-preview.jpg);
+  background-image: url(https://images.unsplash.com/photo-1463123081488-789f998ac9c4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTM0fHx2ZWdldGFibGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
   padding: 38px 35px 40px 40px;
   display: flex;
   flex-direction: column;
@@ -74,7 +77,6 @@
   font-family: $font-cards;
   font-size: 16px;
   color: $color-secondary;
-  /*font-weight: lighter; REVISAR*/
 }
 
 .section__photo--image {

@@ -10,7 +10,12 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  background-color: $color-background-landing;
+  //background-color: $color-background-landing;
+  //background-image: url(https://images.unsplash.com/photo-1580792442222-081d7796d896?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fHZlZ2V0YWJsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60);
+  // background-image: url(https://images.unsplash.com/photo-1600475134203-203797f5dc61?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODR8fHZlZ2V0YWJsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60);
+ // background-image: url(https://images.unsplash.com/photo-1594349835151-8b9d5eec19b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODV8fHZlZ2V0YWJsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60);
+  background-image: url(https://images.unsplash.com/photo-1463123081488-789f998ac9c4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTM0fHx2ZWdldGFibGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60);
+  background-size: cover;
   height: calc(100vh - 120px);
 
   @media all and (min-width: 768px) {
