@@ -27,8 +27,6 @@
     margin-top: 95px;
 
     @media all and (min-width: 768px) {
-      width: 419px;
-      height: 105px;
       margin-bottom: 31px;
     }
   }
@@ -114,5 +112,6 @@
     border-radius: 21px solid $color-primary;
     background-color: $color-button;
     margin-top: 38.6px;
+    margin-bottom: 80px;
   }
 }
