@@ -54,43 +54,45 @@ Al cargar la página el usuri@ verá la landing page en la que debe clickar el b
 
 ## Estrucutra de las carpetas
 
+```
 src
 ├─ api // los ficheros de esta carpeta se copian en public/api/
-| └─ data.json
+|  └─ data.json
 ├─ js // los ficheros de esta carpeta se concatenan en el fichero main.js y este se guarda en public/main.js
-| ├─ main.js
-| └─ events.js
+|  ├─ main.js
+|  └─ events.js
 ├─ scss
-| ├─ core
-| | ├─ reset
-| | └─ variables
-| └─ layout
-| ├─ design
-| ├─ fill
-| ├─ footer
-| ├─ header
-| ├─ landing-page
-| ├─ main-card
-| ├─ page
-| ├─ palette
-| ├─ photo
-| └─ share
+|  ├─ core
+|  |  ├─ reset
+|  |  └─ variables
+|  └─ layout
+|     ├─ design
+|     ├─ fill
+|     ├─ footer
+|     ├─ header
+|     ├─ landing-page
+|     ├─ main-card
+|     ├─ page
+|     ├─ palette
+|     ├─ photo
+|     └─ share
 └─ html
-| └─ partials
-| ├─ design
-| ├─ fill
-| ├─ footer
-| ├─ header
-| ├─ main-cards
-| ├─ main
-| ├─ photo
-| └─ share
+|  └─ partials
+|     ├─ design
+|     ├─ fill
+|     ├─ footer
+|     ├─ header
+|     ├─ main-cards
+|     ├─ main
+|     ├─ photo
+|     └─ share
 └─ js
-└─ partials
-├─ 00_collapsible
-├─ 01_form
-├─ 02_palette
-├─ 03_photo
-├─ 04_reset
-├─ 05_localStorage
-└─ 06_fetch
+   └─ partials
+      ├─ 00_collapsible
+      ├─ 01_form
+      ├─ 02_palette
+      ├─ 03_photo
+      ├─ 04_reset
+      ├─ 05_localStorage
+      └─ 06_fetch
+```
