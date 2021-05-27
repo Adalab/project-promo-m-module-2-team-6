@@ -11,10 +11,10 @@
   text-align: center;
   justify-content: center;
   //background-color: $color-background-landing;
-  //background-image: url(https://images.unsplash.com/photo-1580792442222-081d7796d896?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fHZlZ2V0YWJsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60);
-  // background-image: url(https://images.unsplash.com/photo-1600475134203-203797f5dc61?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODR8fHZlZ2V0YWJsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60);
-  // background-image: url(https://images.unsplash.com/photo-1594349835151-8b9d5eec19b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODV8fHZlZ2V0YWJsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60);
-  background-image: url(https://images.unsplash.com/photo-1463123081488-789f998ac9c4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTM0fHx2ZWdldGFibGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60);
+  //background-image: url(https://alavoura.com.br/wp-content/uploads/2020/08/0-4MGX9-gfYM3t8mIKa5QlsHZnyoI-bmw323i.eklablog.com-.jpg);
+  //background-image: url(https://images.unsplash.com/photo-1600475134203-203797f5dc61?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODR8fHZlZ2V0YWJsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60);
+  background-image: url(https://images.unsplash.com/photo-1594349835151-8b9d5eec19b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODV8fHZlZ2V0YWJsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60);
+  // background-image: url(https://images.unsplash.com/photo-1463123081488-789f998ac9c4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTM0fHx2ZWdldGFibGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60);
   background-size: cover;
   height: calc(100vh - 120px);
 
@@ -42,6 +42,7 @@
     width: 270px;
     height: 24px;
     line-height: 19.2px;
+    color: $color-primary;
 
     @media all and (min-width: 768px) {
       width: 278px;
@@ -54,7 +55,7 @@
     font-family: $font-primary;
     width: 250px;
     font-size: 12.8px;
-    color: $color-primary;
+    color: rgba(255, 255, 255, 0.808);
     line-height: 25px;
     margin-bottom: 17.5px;
     font-weight: normal;
@@ -70,7 +71,7 @@
 
   &__container {
     width: 268px;
-    border: 1.6px solid $color-border;
+    border: 2px solid rgba(255, 255, 255, 0.37);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -93,8 +94,7 @@
   }
 
   &__text {
-    font-family: $font-primary;
-    color: $color-secondary;
+    color: rgba(255, 255, 255, 0.808);
     font-size: 12.8px;
 
     @media all and (min-width: 768px) {
@@ -106,17 +106,18 @@
     text-decoration: none;
     color: $color-background-cards;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     text-align: center;
     line-height: normal;
-    width: 129px;
-    height: 42px;
+    width: 127px;
+    height: 39px;
     border-radius: 21px;
     line-height: 42px;
     border-radius: 21px solid $color-primary;
-    background-color: $color-button;
+    background-color: $color-primary;
     margin-top: 38.6px;
     margin-bottom: 80px;
+    font-family: $font-primary;
   }
 }
