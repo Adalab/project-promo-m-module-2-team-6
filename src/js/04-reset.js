@@ -9,7 +9,8 @@ function onResetClickForm() {
     linkedin: "",
     phone: "",
     github: "",
-    photo: "https://placekitten.com/200/200",
+    photo:
+      "https://github.com/Adalab/project-promo-m-module-2-team-6/blob/main/src/images/vegan-deburguer-photo.jpg",
   };
   writeImage(formElement.photo);
   newPhotoElements();

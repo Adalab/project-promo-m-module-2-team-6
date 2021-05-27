@@ -8,12 +8,12 @@ const photoLinkedin = document.querySelector(".js-photoLinkedin");
 const photoGitHub = document.querySelector(".js-photoGithub");
 const photoPhone = document.querySelector(".js-photoPhone");
 
-
 let formElement = {
   palette: "1",
   name: "Nombre Apellido",
   job: "Front-end developer",
-  photo: "",
+  photo:
+    "https://github.com/Adalab/project-promo-m-module-2-team-6/blob/main/src/images/vegan-deburguer-photo.jpg",
   email: "",
   linkedin: "",
   phone: "",
