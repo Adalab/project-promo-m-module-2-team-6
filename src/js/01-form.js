@@ -8,11 +8,12 @@ const photoLinkedin = document.querySelector(".js-photoLinkedin");
 const photoGitHub = document.querySelector(".js-photoGithub");
 const photoPhone = document.querySelector(".js-photoPhone");
 
+
 let formElement = {
   palette: "1",
   name: "Nombre Apellido",
   job: "Front-end developer",
-  photo: "https://placekitten.com/200/200",
+  photo: "",
   email: "",
   linkedin: "",
   phone: "",
@@ -23,8 +24,8 @@ function newPhotoElements() {
   photoFullName.innerText = formElement.name;
   photoJob.innerText = formElement.job;
   photoEmail.href = formElement.email;
-  photoLinkedin.href = formElement.linkedin;
-  photoGitHub.href = formElement.github;
+  photoLinkedin.href += formElement.linkedin;
+  photoGitHub.href += formElement.github;
   photoPhone.href = formElement.phone;
 }
 
