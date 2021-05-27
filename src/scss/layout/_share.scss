@@ -24,7 +24,7 @@
     &--title {
       text-transform: uppercase;
       font-size: 18px;
-      color: $color-secondary;
+      color: $color-primary;
       font-family: "Open Sans", sans-serif;
       font-weight: 600;
     }
@@ -50,8 +50,8 @@
       font-family: $font-primary;
       font-size: 18px;
       color: $color-background-cards;
-      background-color: $color-icons;
-      border: 1px solid $color-icons;
+      background-color: #0c5c5c;
+      border: 1px solid $color-background-cards;
       box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
       border-radius: 12px;
       outline: none;

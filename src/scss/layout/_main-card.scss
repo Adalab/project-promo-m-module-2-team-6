@@ -3,8 +3,7 @@
     display: flex;
     flex-direction: row;
     padding-left: 20px;
-    //height: 812px;
-    background: linear-gradient(to bottom, #f5f5f5, #fff);
+    background: linear-gradient(to bottom, #fffff7, rgb(243, 241, 230));
     padding-top: 23px;
     padding-bottom: 20px;
     justify-content: space-around;
@@ -13,7 +12,6 @@
 
 .sectionForm {
   order: -1;
-  background: linear-gradient(to bottom, #f5f5f5, #fff);
   padding: 30px 20px 30px 20px;
 
   @media all and (min-width: 768px) {

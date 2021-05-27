@@ -26,11 +26,11 @@
   height: 30px;
   font-family: $font-primary;
   font-size: 12px;
-  color: $color-secondary;
+  color: $color-background-cards;
   text-transform: uppercase;
-  border-radius: 20px;
+  border-radius: 8px;
   border: 1px solid $color-background-cards;
-  background-color: rgba(221, 233, 237, 100);
+  background-color: #0c5c5c;
   margin-bottom: 20px;
   transform: translate(-80px);
 
@@ -40,23 +40,18 @@
 }
 .icongarbage {
   font-size: 12px;
-  color: $color-secondary;
   margin-right: 8px;
 }
 .section__photo--card {
   background-color: $color-background-cards;
   padding-top: 21px;
-  border-radius: 3px;
+  border-radius: 15px solid black;
   width: 240px;
-  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
 
   @media all and (min-width: 768px) {
     margin-left: 25px;
     margin-right: 24px;
     margin-bottom: 220px;
-  }
-
-  @media all and (min-width: 1200px) {
   }
 }
 .section__photo--boxnamejob {

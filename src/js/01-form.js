@@ -16,7 +16,7 @@ let formElement = {
   email: "",
   linkedin: "",
   phone: "",
-  github: "",
+  github: "https://github.com/",
 };
 
 function newPhotoElements() {
