@@ -1,24 +1,8 @@
-/* eslint-disable no-console */
-/* eslint-disable no-undef */
 "use strict";
 
-// photoFullName ya esta definido en otro script.
 const boxNameJob = document.querySelector(".section__photo--boxnamejob");
 const photoLinks = document.querySelectorAll(".section__photo--link");
 
-/* Quita los estilos relacionados con las paletas de colores
-   a todos los elementos: nombre, trabajo y los links de abajo de la tarjeta.
-
-   Importante: "elemento.classList" hace referencia a todas las clases CSS que
-   tiene asignado elemento. Por ejemplo:
-      <div id="elemento" classNames="clase1 clase2"></div>
-      document.getElementById("elemento").classList -> [clase1, clase2]
-      document.getElementById("elemento").classList.add("clase3") ->
-                              <div id="elemento" classNames="clase1 clase2 clase3"></div>
-
-      document.getElementById("elemento").classList.remove("clase2") ->
-                              <div id="elemento" classNames="clase1 clase3"></div>
-*/
 function resetPalette() {
   console.log(photoFullName.classList);
   photoFullName.classList.remove(
@@ -43,19 +27,13 @@ function resetPalette() {
   }
 }
 
-// solucion 1: nos suscribimos al evento change del formulario
-// escribimos menos codigo pero es mas dificil de entender
 const form = document.querySelector(".main-cards__form");
 form.addEventListener("change", onFormChange);
 
 function onFormChange(event) {
-  // solo atendemos los eventos que vienen de los input radio de las
-  // paletas de colores
-  //console.log("* event.target ->", event.target);
   if (event.target.name === "design-color") {
     resetPalette();
 
-    // obtenemos el valor del input radio que puede ser "g", "r" y "b"
     const paletteValue = event.target.value;
     console.log(paletteValue);
 
@@ -73,11 +51,9 @@ function onFormChange(event) {
 }
 
 function updatePalette(paletteValue) {
-  // añadimos las clases en funcion del radio button que se haya seleccionado
   photoFullName.classList.add(`color-palette-${paletteValue}1`);
   boxNameJob.classList.add(`border-palette-${paletteValue}2`);
 
-  // hay que recorrer todos los links para cambiar a cada uno el color del borde
   for (const p of photoLinks) {
     p.classList.add(`border-palette-${paletteValue}3`);
   }

@@ -3,8 +3,8 @@
 function onResetClickForm() {
   form.reset();
   formElement = {
-    name: "",
-    job: "",
+    name: "Nombre Apellido",
+    job: "Front-end developer",
     email: "",
     linkedin: "",
     phone: "",
