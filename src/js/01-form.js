@@ -39,6 +39,7 @@ function handlerFormKeyUp(ev) {
   onFormKeyUp(ev);
   console.log(formElement);
   newPhotoElements();
+  getFromLocalStorage();
 }
 
 fillForm.addEventListener("keyup", handlerFormKeyUp);

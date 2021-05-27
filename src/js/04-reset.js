@@ -3,14 +3,13 @@
 function onResetClickForm() {
   form.reset();
   formElement = {
-    name: "Nombre Apellido",
-    job: "Front-end developer",
+    name: "",
+    job: "",
     email: "",
     linkedin: "",
     phone: "",
     github: "",
-    photo:
-      "https://github.com/Adalab/project-promo-m-module-2-team-6/blob/main/src/images/vegan-deburguer-photo.jpg",
+    photo: "./assets/images/vegan-deburguer-photo.jpg",
   };
   writeImage(formElement.photo);
   newPhotoElements();
