@@ -2,7 +2,6 @@
 
 const collapsibleHeaders = document.querySelectorAll(".js-collapsible-header");
 const collapsibleBox = document.querySelectorAll(".js-collapsible");
-//array de las flechas
 const arrow = document.querySelectorAll(".js-arrow");
 for (const collapsibleHeader of collapsibleHeaders) {
   collapsibleHeader.addEventListener("click", switchCollapsible);

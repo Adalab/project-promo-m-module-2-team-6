@@ -20,7 +20,7 @@
   grid-column: span 3;
   grid-row: 1;
   font-size: 18px;
-  color: $color-secondary;
+  color: $color-primary;
   text-transform: uppercase;
 }
 .icon--design {
@@ -41,7 +41,6 @@ design<i class="far fa-object-ungroup"></i>
   grid-row: 2;
   font-family: $font-primary;
   font-size: 14px;
-  color: $color-secondary;
   text-transform: uppercase;
 
   font-weight: lighter;
